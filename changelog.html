@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog | S-RCS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        .changelog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            max-height: 70vh;
+            overflow-y: auto;
+            padding-right: 15px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary) var(--bg-card);
+        }
+        
+        .changelog-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .changelog-container::-webkit-scrollbar-track {
+            background: var(--bg-card);
+            border-radius: 4px;
+        }
+        
+        .changelog-container::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+
+        /* Timeline Style Blog */
+        .markdown-body {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .markdown-body::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 20px;
+            bottom: 0;
+            width: 2px;
+            background: rgba(14, 165, 233, 0.2);
+        }
+
+        .markdown-body h2 {
+            position: relative;
+            background: var(--bg-card);
+            padding: 15px 20px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-top: 50px;
+            font-size: 1.5rem;
+            color: var(--primary);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .markdown-body h2::before {
+            content: '';
+            position: absolute;
+            left: -36px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 14px;
+            background: var(--primary);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.2);
+        }
+
+        .markdown-body h3 {
+            margin-top: 30px;
+            color: var(--text-primary);
+            font-size: 1.2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .markdown-body ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .markdown-body li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .markdown-body li::before {
+            content: '•';
+            color: var(--success);
+            font-weight: bold;
+            position: absolute;
+            left: 5px;
+        }
+
+        .markdown-body code {
+            background: rgba(0,0,0,0.3);
+            color: var(--accent);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        /* Hide the top H1 "Changelog" if present in markdown to avoid double title */
+        .markdown-body h1 {
+            display: none;
+        }
+        
+        .markdown-body hr {
+            border: 0;
+            height: 1px;
+            background: transparent;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (Shared) -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Page Header -->
+    <header class="section" style="padding-top: 150px; text-align: center;">
+        <div class="container">
+            <div class="hero-badge" style="background: rgba(99, 102, 241, 0.1); color: #6366f1;">DEV UPDATES</div>
+            <h1>Changelog</h1>
+            <p>Stay up to date with the latest features, improvements, and fixes.</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="section">
+        <div class="container">
+            <div class="changelog-container">
+                <div id="changelog-content" class="markdown-body">
+                    <div style="text-align: center; color: var(--text-secondary);">
+                        <i class="fa-solid fa-circle-notch fa-spin" style="font-size: 2rem; margin-bottom: 20px;"></i>
+                        <p>Loading updates...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Shared) -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Fetch raw markdown from GitHub
+        // Appending timestamp to bypass GitHub raw caching (optional but good for updates)
+        const changelogUrl = 'https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/CHANGELOG.md?v=' + new Date().getTime();
+        const container = document.getElementById('changelog-content');
+
+        fetch(changelogUrl)
+            .then(response => {
+                if (!response.ok) throw new Error('Failed to load changelog from GitHub');
+                return response.text();
+            })
+            .then(markdown => {
+                // Parse markdown using Marked.js
+                // Configure marked to handle GFM (GitHub Flavored Markdown)
+                marked.use({
+                    gfm: true,
+                    breaks: true
+                });
+                container.innerHTML = marked.parse(markdown);
+            })
+            .catch(error => {
+                container.innerHTML = `
+                    <div style="text-align: center; color: var(--danger);">
+                        <i class="fa-solid fa-triangle-exclamation" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                        <p>Could not load changelog from GitHub.</p>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">${error.message}</p>
+                        <a href="https://github.com/Ali7Zeynalli/SRC/blob/main/CHANGELOG.md" target="_blank" class="btn btn-outline" style="margin-top: 20px;">View on GitHub</a>
+                    </div>
+                `;
+            });
+    </script>
+</body>
+</html>
