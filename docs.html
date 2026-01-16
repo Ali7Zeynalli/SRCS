@@ -17,18 +17,18 @@
         <!-- Sidebar Navigation -->
         <aside class="docs-sidebar">
             <div style="padding-bottom: 20px;">
-                <h4>Getting Started</h4>
+                <h4 data-i18n="docs.sidebar.getting_started">Getting Started</h4>
                 <ul>
-                    <li><a href="#intro" class="active">Introduction</a></li>
-                    <li><a href="#requirements">System Requirements</a></li>
-                    <li><a href="#installation">Download Project</a></li>
-                    <li><a href="#docker-install">Docker Installation</a></li>
-                    <li><a href="#ad-prep">Active Directory Prep</a></li>
-                    <li><a href="#wizard">Setup Wizard</a></li>
-                    <li><a href="#post-install">Post-Installation</a></li>
+                    <li><a href="#intro" class="active" data-i18n="docs.sidebar.intro">Introduction</a></li>
+                    <li><a href="#requirements" data-i18n="docs.sidebar.requirements">System Requirements</a></li>
+                    <li><a href="#installation" data-i18n="docs.sidebar.installation">Download Project</a></li>
+                    <li><a href="#docker-install" data-i18n="docs.sidebar.docker">Docker Installation</a></li>
+                    <li><a href="#ad-prep" data-i18n="docs.sidebar.ad_prep">Active Directory Prep</a></li>
+                    <li><a href="#wizard" data-i18n="docs.sidebar.wizard">Setup Wizard</a></li>
+                    <li><a href="#post-install" data-i18n="docs.sidebar.post_install">Post-Installation</a></li>
                 </ul>
 
-                <h4>User Manual</h4>
+                <h4 data-i18n="docs.sidebar.user_manual">User Manual</h4>
                 <ul>
                     <li><a href="#dashboard">Dashboard & Login</a></li>
                     <li><a href="#users">User Management</a></li>
@@ -37,14 +37,14 @@
                     <li><a href="#computers">Computers & GPOs</a></li>
                 </ul>
 
-                <h4>Modules</h4>
+                <h4 data-i18n="docs.sidebar.modules">Modules</h4>
                 <ul>
                     <li><a href="#tasks">Task Management</a></li>
                     <li><a href="#reporting">Reporting</a></li>
                     <li><a href="#logs">Audit Logs</a></li>
                 </ul>
 
-                <h4>Support</h4>
+                <h4 data-i18n="docs.sidebar.support">Support</h4>
                 <ul>
                     <li><a href="#troubleshooting">Troubleshooting</a></li>
                     <li><a href="#remote">Remote Access</a></li>
@@ -57,14 +57,14 @@
         <main class="docs-content">
             
             <section id="intro" class="doc-section active">
-                <h1>Documentation Centre</h1>
-                <p>Welcome to the S-RCS documentation. S-RCS is a comprehensive web-based portal designed to revolutionize Windows Active Directory management, moving administration from traditional tools to a streamlined web platform.</p>
+                <h1 data-i18n="docs.intro.title">Documentation Centre</h1>
+                <p data-i18n="docs.intro.welcome">Welcome to the S-RCS documentation. S-RCS is a comprehensive web-based portal designed to revolutionize Windows Active Directory management, moving administration from traditional tools to a streamlined web platform.</p>
                 <div class="alert" style="background: rgba(14, 165, 233, 0.1); border-left: 4px solid var(--primary); padding: 15px; border-radius: 4px; margin-bottom: 30px;">
                     <i class="fa-solid fa-info-circle" style="color: var(--primary);"></i> 
-                    <span style="color: var(--text-primary);">Current Version: <strong>v1.3.1</strong></span>
+                    <span style="color: var(--text-primary);"><span data-i18n="docs.intro.version">Current Version:</span> <strong>v1.3.1</strong></span>
                     <br><br>
                     <i class="fa-solid fa-pen-to-square" style="color: var(--primary);"></i>
-                    <span style="color: var(--text-primary); font-size: 0.9em; font-style: italic;">
+                    <span style="color: var(--text-primary); font-size: 0.9em; font-style: italic;" data-i18n="docs.intro.note">
                         Note: This documentation is actively being enriched. Sections are being added and expanded regularly to provide a more comprehensive guide.
                     </span>
                 </div>
@@ -87,7 +87,7 @@
             </section>
 
             <section id="requirements" class="doc-section">
-                <h2>System Requirements</h2>
+                <h2 data-i18n="docs.requirements.title">System Requirements</h2>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px;">
                     <div style="background: var(--bg-card); padding: 20px; border-radius: 12px; border: var(--border);">
                         <h3 style="color: var(--primary);"><i class="fa-solid fa-server me-2"></i> S-RCS Server</h3>
@@ -111,7 +111,7 @@
             </section>
 
             <section id="installation" class="doc-section">
-                <h2>Download Project</h2>
+                <h2 data-i18n="docs.installation.title">Download Project</h2>
                 <p>First, get the project files onto your machine.</p>
                 
                 <h3 style="margin-top: 30px;">1. Download the Project</h3>
@@ -156,7 +156,7 @@ docker-compose ps</code></pre>
             </section>
 
             <section id="docker-install" class="doc-section">
-                <h2>Docker Installation</h2>
+                <h2 data-i18n="docs.docker.title">Docker Installation</h2>
                 <p>If you haven't installed Docker yet, follow the instructions for your operating system below.</p>
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px;">
@@ -189,7 +189,7 @@ Restart-Computer</code></pre>
             </section>
 
             <section id="ad-prep" class="doc-section">
-                <h2>Active Directory Preparation</h2>
+                <h2 data-i18n="docs.ad_prep.title">Active Directory Preparation</h2>
                 <div class="alert" style="background: rgba(239, 68, 68, 0.1); border-left: 4px solid var(--danger); padding: 15px; border-radius: 4px; margin-bottom: 20px;">
                     <i class="fa-solid fa-triangle-exclamation" style="color: var(--danger);"></i> 
                     <strong>Critical:</strong> S-RCS uses LDAPS (Port 636). Unencrypted connections (Port 389) are NOT supported.
@@ -242,7 +242,7 @@ Restart-Computer</code></pre>
             </section>
 
             <section id="wizard" class="doc-section">
-                <h2>Setup Wizard</h2>
+                <h2 data-i18n="docs.wizard.title">Setup Wizard</h2>
                 <p>Once your containers are running, navigate to <code>https://localhost:8043</code> (or your server IP). The installer will guide you through 6 steps:</p>
 
                 <div class="steps-container" style="display: flex; flex-direction: column; gap: 40px; margin-top: 30px;">
@@ -308,7 +308,7 @@ Restart-Computer</code></pre>
             </section>
 
             <section id="post-install" class="doc-section">
-                <h2>Post-Installation</h2>
+                <h2 data-i18n="docs.post_install.title">Post-Installation</h2>
                 <div class="alert" style="background: rgba(16, 185, 129, 0.1); border-left: 4px solid var(--success); padding: 15px; border-radius: 4px;">
                     <i class="fa-solid fa-check-circle" style="color: var(--success);"></i> 
                     Congratulations! S-RCS is ready.
@@ -487,6 +487,7 @@ docker-compose logs mysql        # MySQL only</code></pre>
         }
     </style>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

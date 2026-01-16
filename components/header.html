@@ -11,6 +11,21 @@
             <a href="support.html">Support</a>
         </div>
         <div style="display: flex; gap: 10px; align-items: center;">
+            <!-- Language Switcher -->
+            <div class="lang-dropdown">
+                <button class="lang-btn" aria-label="Select Language">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="current-lang">EN</span>
+                </button>
+                <div class="lang-menu">
+                    <a href="#" onclick="changeLanguage('en')">🇬🇧 English</a>
+                    <a href="#" onclick="changeLanguage('az')">🇦🇿 Azərbaycan</a>
+                    <a href="#" onclick="changeLanguage('tr')">🇹🇷 Türkçe</a>
+                    <a href="#" onclick="changeLanguage('de')">🇩🇪 Deutsch</a>
+                    <a href="#" onclick="changeLanguage('ru')">🇷🇺 Русский</a>
+                </div>
+            </div>
+
             <a href="https://github.com/Ali7Zeynalli/SRC" target="_blank" class="btn btn-outline" title="View Project on GitHub">
                 <i class="fa-brands fa-github"></i> GitHub
             </a>

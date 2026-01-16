@@ -1,0 +1,89 @@
+{
+    "navbar": {
+        "home": "Home",
+        "features": "Features",
+        "docs": "Documentation",
+        "support": "Support",
+        "get_started": "Get Started"
+    },
+    "hero": {
+        "badge": "v1.3.0 Available Now",
+        "title_prefix": "Revolutionize Your",
+        "title_highlight": "Active Directory",
+        "title_suffix": "Management",
+        "desc": "Stop wasting time on complex interfaces. Manage Users, Groups, and OUs in just 3 clicks. Secure, Fast, and Docker-Ready.",
+        "cta": "Get Started",
+        "github": "Star us on GitHub"
+    },
+    "stats": {
+        "efficiency": "Efficiency Boost",
+        "setup": "Setup Time",
+        "platform": "Platform"
+    },
+    "footer": {
+        "about": "S-RCS (Server Reporting and Controlling System) is a modern web-based solution designed to simplify and accelerate Windows Active Directory management tasks.",
+        "quick_links": "Quick Links",
+        "legal": "Legal",
+        "license": "License",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "copyright": "© 2025 Ali Zeynalli. All rights reserved."
+    },
+    "docs": {
+        "sidebar": {
+            "getting_started": "Getting Started",
+            "intro": "Introduction",
+            "requirements": "System Requirements",
+            "installation": "Download Project",
+            "docker": "Docker Installation",
+            "ad_prep": "Active Directory Prep",
+            "wizard": "Setup Wizard",
+            "post_install": "Post-Installation",
+            "user_manual": "User Manual",
+            "dashboard": "Dashboard & Login",
+            "users": "User Management",
+            "ous": "OU Management",
+            "groups": "Group Management",
+            "computers": "Computers & GPOs",
+            "modules": "Modules",
+            "tasks": "Task Management",
+            "reporting": "Reporting",
+            "logs": "Audit Logs",
+            "support": "Support",
+            "troubleshooting": "Troubleshooting",
+            "remote": "Remote Access",
+            "enterprise": "Enterprise Support"
+        },
+        "intro": {
+            "title": "Documentation Centre",
+            "welcome": "Welcome to the S-RCS documentation. S-RCS is a comprehensive web-based portal designed to revolutionize Windows Active Directory management, moving administration from traditional tools to a streamlined web platform.",
+            "version": "Current Version:",
+            "note": "Note: This documentation is actively being enriched. Sections are being added and expanded regularly to provide a more comprehensive guide."
+        },
+        "requirements": {
+            "title": "System Requirements"
+        },
+        "installation": {
+            "title": "Download Project"
+        },
+        "docker": {
+            "title": "Docker Installation"
+        },
+        "ad_prep": {
+            "title": "Active Directory Preparation"
+        },
+        "wizard": {
+            "title": "Setup Wizard"
+        },
+        "post_install": {
+            "title": "Post-Installation"
+        }
+    },
+    "features": {
+        "header": {
+            "badge": "FULL PLATFORM TOUR",
+            "title": "Platform Overview",
+            "desc": "Explore all 10 core modules of the S-RCS management platform."
+        }
+    }
+}

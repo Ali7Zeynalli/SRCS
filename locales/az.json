@@ -1,0 +1,89 @@
+{
+    "navbar": {
+        "home": "Ana Səhifə",
+        "features": "Xüsusiyyətlər",
+        "docs": "Sənədlər",
+        "support": "Dəstək",
+        "get_started": "Başla"
+    },
+    "hero": {
+        "badge": "v1.3.0 İndi Mövcuddur",
+        "title_prefix": "",
+        "title_highlight": "Active Directory",
+        "title_suffix": "İdarəetmənizdə İnqilab Edin",
+        "desc": "Mürəkkəb interfeyslərdə vaxt itirməyə son. İstifadəçiləri, Qrupları və OU-ları cəmi 3 kliklə idarə edin. Təhlükəsiz, Sürətli və Docker-Hazır.",
+        "cta": "Başlayın",
+        "github": "GitHub-da Ulduz verin"
+    },
+    "stats": {
+        "efficiency": "Səmərəlilik Artımı",
+        "setup": "Quraşdırma Vaxtı",
+        "platform": "Platforma"
+    },
+    "footer": {
+        "about": "S-RCS (Server Reporting and Controlling System), Windows Active Directory idarəetmə tapşırıqlarını sadələşdirmək və sürətləndirmək üçün hazırlanmış müasir veb əsaslı həlldir.",
+        "quick_links": "Keçidlər",
+        "legal": "Hüquqi",
+        "license": "Lisenziya",
+        "privacy": "Məxfilik Siyasəti",
+        "terms": "Xidmət Şərtləri",
+        "copyright": "© 2025 Əli Zeynallı. Bütün hüquqlar qorunur."
+    },
+    "docs": {
+        "sidebar": {
+            "getting_started": "Başlanğıc",
+            "intro": "Giriş",
+            "requirements": "Sistem Tələbləri",
+            "installation": "Layihəni Yüklə",
+            "docker": "Docker Quraşdırılması",
+            "ad_prep": "Active Directory Hazırlığı",
+            "wizard": "Quraşdırma Sehrbazı",
+            "post_install": "Quraşdırmadan Sonra",
+            "user_manual": "İstifadəçi Təlimatı",
+            "dashboard": "İdarə Paneli və Giriş",
+            "users": "İstifadəçi İdarəetməsi",
+            "ous": "OU İdarəetməsi",
+            "groups": "Qrup İdarəetməsi",
+            "computers": "Kompüterlər və GPO-lar",
+            "modules": "Modullar",
+            "tasks": "Tapşırıq İdarəetməsi",
+            "reporting": "Hesabatlıq",
+            "logs": "Audit Logları",
+            "support": "Dəstək",
+            "troubleshooting": "Nasazlıqların Aradan Qaldırılması",
+            "remote": "Uzaqdan Çıxış",
+            "enterprise": "Korporativ Dəstək"
+        },
+        "intro": {
+            "title": "Sənədləşdirmə Mərkəzi",
+            "welcome": "S-RCS sənədlərinə xoş gəlmisiniz. S-RCS, idarəetməni ənənəvi vasitələrdən sadələşdirilmiş veb platformaya keçirərək Windows Active Directory idarəçiliyində inqilab etmək üçün hazırlanmış hərtərəfli bir portalıdır.",
+            "version": "Cari Versiya:",
+            "note": "Qeyd: Bu sənədlər aktiv şəkildə zənginləşdirilir. Daha əhatəli bir bələdçi təmin etmək üçün bölmələr mütəmadi olaraq əlavə olunur və genişləndirilir."
+        },
+        "requirements": {
+            "title": "Sistem Tələbləri"
+        },
+        "installation": {
+            "title": "Layihəni Yüklə"
+        },
+        "docker": {
+            "title": "Docker Quraşdırılması"
+        },
+        "ad_prep": {
+            "title": "Active Directory Hazırlığı"
+        },
+        "wizard": {
+            "title": "Quraşdırma Sehrbazı"
+        },
+        "post_install": {
+            "title": "Quraşdırmadan Sonra"
+        }
+    },
+    "features": {
+        "header": {
+            "badge": "TAM PLATFORMA TURU",
+            "title": "Platforma İcmalı",
+            "desc": "S-RCS idarəetmə platformasının bütün 10 əsas modulunu kəşf edin."
+        }
+    }
+}

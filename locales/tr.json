@@ -1,0 +1,89 @@
+{
+    "navbar": {
+        "home": "Ana Sayfa",
+        "features": "Özellikler",
+        "docs": "Dokümantasyon",
+        "support": "Destek",
+        "get_started": "Başlayın"
+    },
+    "hero": {
+        "badge": "v1.3.0 Şimdi Yayında",
+        "title_prefix": "",
+        "title_highlight": "Active Directory",
+        "title_suffix": "Yönetiminizde Devrim Yapın",
+        "desc": "Karmaşık arayüzlerde zaman kaybetmeye son. Kullanıcıları, Grupları ve OU'ları sadece 3 tıklamayla yönetin. Güvenli, Hızlı ve Docker Uyumlu.",
+        "cta": "Başlayın",
+        "github": "Bizi GitHub'da Yıldızlayın"
+    },
+    "stats": {
+        "efficiency": "Verimlilik Artışı",
+        "setup": "Kurulum Süresi",
+        "platform": "Platform"
+    },
+    "footer": {
+        "about": "S-RCS (Server Reporting and Controlling System), Windows Active Directory yönetim görevlerini basitleştirmek ve hızlandırmak için tasarlanmış modern bir web tabanlı çözümdür.",
+        "quick_links": "Hızlı Bağlantılar",
+        "legal": "Yasal",
+        "license": "Lisans",
+        "privacy": "Gizlilik Politikası",
+        "terms": "Hizmet Şartları",
+        "copyright": "© 2025 Ali Zeynalli. Tüm hakları saklıdır."
+    },
+    "docs": {
+        "sidebar": {
+            "getting_started": "Başlangıç",
+            "intro": "Giriş",
+            "requirements": "Sistem Gereksinimleri",
+            "installation": "Projeyi İndir",
+            "docker": "Docker Kurulumu",
+            "ad_prep": "Active Directory Hazırlığı",
+            "wizard": "Kurulum Sihirbazı",
+            "post_install": "Kurulum Sonrası",
+            "user_manual": "Kullanıcı Kılavuzu",
+            "dashboard": "Panel ve Giriş",
+            "users": "Kullanıcı Yönetimi",
+            "ous": "OU Yönetimi",
+            "groups": "Grup Yönetimi",
+            "computers": "Bilgisayarlar ve GPO'lar",
+            "modules": "Modüller",
+            "tasks": "Görev Yönetimi",
+            "reporting": "Raporlama",
+            "logs": "Denetim Kayıtları",
+            "support": "Destek",
+            "troubleshooting": "Sorun Giderme",
+            "remote": "Uzaktan Erişim",
+            "enterprise": "Kurumsal Destek"
+        },
+        "intro": {
+            "title": "Dokümantasyon Merkezi",
+            "welcome": "S-RCS dokümantasyonuna hoş geldiniz. S-RCS, Windows Active Directory yönetimini geleneksel araçlardan modern bir web platformuna taşıyarak devrim yaratmak için tasarlanmıştır.",
+            "version": "Mevcut Sürüm:",
+            "note": "Not: Bu dokümantasyon aktif olarak zenginleştirilmektedir."
+        },
+        "requirements": {
+            "title": "Sistem Gereksinimleri"
+        },
+        "installation": {
+            "title": "Projeyi İndir"
+        },
+        "docker": {
+            "title": "Docker Kurulumu"
+        },
+        "ad_prep": {
+            "title": "Active Directory Hazırlığı"
+        },
+        "wizard": {
+            "title": "Kurulum Sihirbazı"
+        },
+        "post_install": {
+            "title": "Kurulum Sonrası"
+        }
+    },
+    "features": {
+        "header": {
+            "badge": "TAM PLATFORM TURU",
+            "title": "Platform Genel Bakış",
+            "desc": "S-RCS yönetim platformunun tüm 10 temel modülünü keşfedin."
+        }
+    }
+}

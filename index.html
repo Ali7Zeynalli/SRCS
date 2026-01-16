@@ -17,8 +17,8 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container hero-content">
-            <div class="hero-badge">v1.3.0 Available Now</div>
-            <h1>Revolutionize Your <span style="background: var(--grad-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Active Directory</span> Management</h1>
+            <div class="hero-badge" data-i18n="hero.badge">v1.3.0 Available Now</div>
+            <h1><span data-i18n="hero.title_prefix">Revolutionize Your</span> <span style="background: var(--grad-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" data-i18n="hero.title_highlight">Active Directory</span> <span data-i18n="hero.title_suffix">Management</span></h1>
             
             <div style="display: flex; gap: 10px; justify-content: center; margin: 20px 0; flex-wrap: wrap;">
                 <a href="https://github.com/Ali7Zeynalli/SRC/stargazers"><img src="https://img.shields.io/github/stars/Ali7Zeynalli/SRC?style=for-the-badge&color=blue&logo=github" alt="GitHub Stars"></a>
@@ -27,10 +27,10 @@
                 <a href="#"><img src="https://img.shields.io/badge/Platform-Windows%20AD-0078D6.svg?style=for-the-badge&logo=windows" alt="Platform"></a>
             </div>
 
-            <p>Stop wasting time on complex interfaces. Manage Users, Groups, and OUs in just 3 clicks. Secure, Fast, and Docker-Ready.</p>
+            <p data-i18n="hero.desc">Stop wasting time on complex interfaces. Manage Users, Groups, and OUs in just 3 clicks. Secure, Fast, and Docker-Ready.</p>
             
             <div style="margin-top: 30px; display: flex; gap: 20px; justify-content: center;">
-                <a href="#install" class="btn btn-primary">
+                <a href="#install" class="btn btn-primary" data-i18n="hero.cta">
                     <i class="fa-solid fa-rocket"></i> Get Started
                 </a>
             </div>
@@ -309,7 +309,7 @@
             <div style="text-align: center; margin-top: 40px;">
                 <p style="color: var(--text-secondary); font-size: 0.9rem;">
                     <i class="fa-solid fa-info-circle"></i> 
-                    ManageEngine and Adaxes are registered trademarks. Prices are approximate and subject to change.
+                    <span data-i18n="comparison.disclaimer">ManageEngine and Adaxes are registered trademarks. Prices are approximate and subject to change.</span>
                 </p>
             </div>
         </div>
@@ -360,6 +360,7 @@
     <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

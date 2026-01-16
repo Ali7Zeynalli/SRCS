@@ -16,9 +16,9 @@
     <!-- Page Header -->
     <header class="section" style="padding-top: 150px; padding-bottom: 30px; text-align: center;">
         <div class="container">
-            <div class="hero-badge">FULL PLATFORM TOUR</div>
-            <h1>Platform Overview</h1>
-            <p style="margin-bottom: 0;">Explore all 10 core modules of the S-RCS management platform.</p>
+            <div class="hero-badge" data-i18n="features.header.badge">FULL PLATFORM TOUR</div>
+            <h1 data-i18n="features.header.title">Platform Overview</h1>
+            <p style="margin-bottom: 0;" data-i18n="features.header.desc">Explore all 10 core modules of the S-RCS management platform.</p>
         </div>
     </header>
 
@@ -27,14 +27,14 @@
         <div class="container">
             <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
                 <a href="#sec-login" class="nav-pill">Login</a>
-                <a href="#sec-dashboard" class="nav-pill">Dashboard</a>
-                <a href="#sec-users" class="nav-pill">Users</a>
-                <a href="#sec-ous" class="nav-pill">OUs</a>
-                <a href="#sec-groups" class="nav-pill">Groups</a>
-                <a href="#sec-computers" class="nav-pill">Computers</a>
-                <a href="#sec-tasks" class="nav-pill nav-pill-new">🆕 Tasks</a>
-                <a href="#sec-reports" class="nav-pill">Reports</a>
-                <a href="#sec-logs" class="nav-pill">Logs</a>
+                <a href="#sec-dashboard" class="nav-pill" data-i18n="docs.sidebar.dashboard">Dashboard</a>
+                <a href="#sec-users" class="nav-pill" data-i18n="docs.sidebar.users">Users</a>
+                <a href="#sec-ous" class="nav-pill" data-i18n="docs.sidebar.ous">OUs</a>
+                <a href="#sec-groups" class="nav-pill" data-i18n="docs.sidebar.groups">Groups</a>
+                <a href="#sec-computers" class="nav-pill" data-i18n="docs.sidebar.computers">Computers</a>
+                <a href="#sec-tasks" class="nav-pill nav-pill-new" data-i18n="docs.sidebar.tasks">🆕 Tasks</a>
+                <a href="#sec-reports" class="nav-pill" data-i18n="docs.sidebar.reporting">Reports</a>
+                <a href="#sec-logs" class="nav-pill" data-i18n="docs.sidebar.logs">Logs</a>
                 <a href="#sec-settings" class="nav-pill">Settings</a>
             </div>
         </div>
@@ -191,7 +191,8 @@
     <!-- Footer (Shared) -->
     <div id="footer-placeholder"></div>
 
-    <script src="js/main.js?v=2"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
     <script>
         // Smooth scroll with offset for anchor links
         document.querySelectorAll('.nav-pill').forEach(link => {
