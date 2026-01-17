@@ -175,6 +175,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 const html = await response.text();
                 navbarPlaceholder.innerHTML = html;
                 setActiveLink();
+                // Update Language UI if i18n is ready
+                // Update Language UI if i18n is ready
+                if (window.i18n) {
+                    // Double-check localStorage to ensure persistence
+                    const savedLang = localStorage.getItem('s-rcs-lang');
+                    if (savedLang && window.i18n.language !== savedLang) {
+                        console.log('Restoring saved language:', savedLang);
+                        window.i18n.setLanguage(savedLang);
+                    } else {
+                        window.i18n.updateActiveFlag(window.i18n.language);
+                        window.i18n.translatePage();
+                    }
+                }
             } catch (error) {
                 console.error('Error loading header:', error);
             }

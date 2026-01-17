@@ -2,9 +2,11 @@
     "navbar": {
         "home": "Home",
         "features": "Features",
-        "docs": "Documentation",
+        "docs": "Docs",
+        "changelog": "Changelog",
         "support": "Support",
-        "get_started": "Get Started"
+        "github": "GitHub",
+        "download": "Download"
     },
     "hero": {
         "badge": "v1.3.0 Available Now",
@@ -21,13 +23,250 @@
         "platform": "Platform"
     },
     "footer": {
-        "about": "S-RCS (Server Reporting and Controlling System) is a modern web-based solution designed to simplify and accelerate Windows Active Directory management tasks.",
-        "quick_links": "Quick Links",
-        "legal": "Legal",
-        "license": "License",
-        "privacy": "Privacy Policy",
-        "terms": "Terms of Service",
+        "tagline": "Server Reporting and Controlling System.\nThe future of AD management.",
+        "resources": "Resources",
+        "docs": "Documentation",
+        "changelog": "Changelog",
+        "license": "License & Policy",
+        "opensource": "Open Source",
+        "connect": "Connect",
+        "enterprise": "Enterprise Support",
+        "novusgate": "NovusGate VPN",
+        "srcs": "S-RCS",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
         "copyright": "© 2025 Ali Zeynalli. All rights reserved."
+    },
+    "gallery": {
+        "badge": "INTERFACE",
+        "title": "See S-RCS in Action",
+        "subtitle": "Modern, intuitive, and designed for efficiency.",
+        "loading": "Loading gallery from GitHub...",
+        "source": "Images fetched live from GitHub Repository.",
+        "error": "Gallery not found.",
+        "fetch_error": "Failed to load images from GitHub."
+    },
+    "install": {
+        "title": "Deployment in Seconds",
+        "desc": "With Docker, you can have the full system running in under 2 minutes. No complex wizardry required.",
+        "docker_ready": "Docker Ready",
+        "clientless": "Clientless Architecture",
+        "multi_platform": "Multi-platform (Windows/Linux)",
+        "read_docs": "Read Documentation"
+    },
+    "global_section": {
+        "badge": "GLOBAL READY",
+        "title": "Supported Languages",
+        "desc": "S-RCS is fully multilingual, allowing administration in your preferred language.",
+        "languages": {
+            "az": "Azerbaijani",
+            "en": "English",
+            "de": "German",
+            "ru": "Russian",
+            "tr": "Turkish"
+        }
+    },
+    "comparison": {
+        "badge": "COMPARISON",
+        "title": "S-RCS vs Competitors",
+        "desc": "See how S-RCS compares to traditional and enterprise AD management solutions.",
+        "table": {
+            "feature": "Feature",
+            "aduc": "Windows ADUC",
+            "srcs": "S-RCS",
+            "price": "Price",
+            "price_free": "Free (built-in)",
+            "price_paid": "Paid",
+            "price_free_srcs": "FREE ✓",
+            "deployment": "Deployment",
+            "hours": "Hours",
+            "min_2": "< 2 min",
+            "docker_ready": "Docker Ready",
+            "web_interface": "Web Interface",
+            "mobile_friendly": "Mobile Friendly",
+            "user_mgmt": "User Management",
+            "ou_mgmt": "OU/Group/Computer",
+            "gpo_view": "GPO Viewing",
+            "helpdesk": "Built-in Helpdesk",
+            "audit_logs": "Full Audit Logs",
+            "reports": "One-Click Reports",
+            "multi_lang": "Multi-Language",
+            "limited": "Limited",
+            "open_source": "Open Source"
+        },
+        "disclaimer": "ManageEngine and Adaxes are registered trademarks. Prices are approximate and subject to change."
+    },
+    "pricing": {
+        "header": {
+            "badge": "SUPPORT & SERVICES",
+            "title": "Professional Support",
+            "subtitle": "Get expert help directly from the creator of S-RCS."
+        },
+        "community": {
+            "tag": "COMMUNITY",
+            "price": "Free",
+            "source_code": "Full Source Code Access",
+            "self_hosted": "Self-Hosted (Docker)",
+            "github_issues": "GitHub Issues Support",
+            "docs": "Standard Documentation",
+            "priority": "Priority Support",
+            "setup": "Setup Assistance",
+            "btn": "Community Support"
+        },
+        "professional": {
+            "tag": "PROFESSIONAL",
+            "recommended": "RECOMMENDED",
+            "price": "Custom",
+            "unit": "/project",
+            "desc": "Detailed installation, configuration, and training services provided exclusively by Ali Zeynalli.",
+            "everything": "Everything in Community",
+            "installation": "Full Installation & Deployment",
+            "security": "AD & Security Configuration",
+            "training": "Staff Training & Onboarding",
+            "support": "Priority Direct Support",
+            "btn": "Request Quote"
+        },
+        "services_breakdown": {
+            "title": "Service Breakdown",
+            "subtitle": "Comprehensive professional services to ensure your success.",
+            "installation": {
+                "title": "Full Installation",
+                "desc": "Complete installation of S-RCS in your infrastructure, ensuring best practices."
+            },
+            "config": {
+                "title": "AD Configuration",
+                "desc": "Setup of Certificate Services, LDAPS, and Firewall configuration for secure access."
+            },
+            "support": {
+                "title": "Technical Support",
+                "desc": "Priority problem resolution, troubleshooting, and ongoing maintenance."
+            },
+            "training": {
+                "title": "Team Training",
+                "desc": "Comprehensive training sessions to help your team master S-RCS."
+            },
+            "cta": "Request Consultation"
+        }
+    },
+    "contact": {
+        "title": "Contact Information",
+        "desc": "Reach out directly for consultation and service inquiries.",
+        "email": "Send Email"
+    },
+    "features": {
+        "header": {
+            "badge": "FULL PLATFORM TOUR",
+            "title": "Platform Overview",
+            "desc": "Explore all 10 core modules of the S-RCS management platform."
+        },
+        "nav": {
+            "login": "Login",
+            "settings": "Settings"
+        },
+        "list": {
+            "login": {
+                "title": "Secure Login",
+                "desc": "Secure entry point to your management console. Modern design with robust authentication via LDAPS encryption."
+            },
+            "dashboard": {
+                "title": "Interactive Dashboard",
+                "desc": "Get a bird's-eye view. Monitor Helpdesk tickets, Password status, System Health, and Active Directory stats (Users, Groups, Computers) in real-time."
+            },
+            "users": {
+                "title": "User Management",
+                "desc": "Streamlined user lifecycle management. Create users, reset passwords, unlock accounts, and manage properties effortlessly."
+            },
+            "ous": {
+                "title": "OU Management",
+                "desc": "Manage Organization Units with a hierarchical tree or table view. Create, edit, and move objects between OUs using intuitive modal interfaces."
+            },
+            "groups": {
+                "title": "Group Management",
+                "desc": "Create and manage Security and Distribution groups. Easily add or remove members and organize groups within your structure."
+            },
+            "computers": {
+                "title": "Computers",
+                "desc": "View and manage all domain-connected workstations and servers. Monitor AD status (enabled/disabled) and manage computer objects efficiently."
+            },
+            "tasks": {
+                "badge": "NEW in v1.3.0",
+                "title": "Task Management",
+                "desc": "Integrated Helpdesk & Ticketing system. Streamline support by creating tickets, assigning priorities, tracking status, and maintaining full audit trails."
+            },
+            "reports": {
+                "title": "Advanced Reporting",
+                "desc": "Generate comprehensive reports for Users, Groups, Computers, and OUs. Export data to CSV or Excel formats for further analysis and compliance."
+            },
+            "logs": {
+                "title": "Activity Logs",
+                "desc": "Comprehensive audit trail of system actions. Search and filter logs by date to track exactly who did what, ensuring maximum security and accountability."
+            },
+            "settings": {
+                "title": "System Settings",
+                "desc": "Configure global system preferences. Manage LDAPS connections, Domain Controllers, and Role-Based Access Control via Admin and Allowed Groups."
+            }
+        },
+        "cta": {
+            "badge": "READY TO START?",
+            "title": "Experience S-RCS Today",
+            "desc": "Deploy in under 2 minutes with Docker. Free forever.",
+            "download": "Download Now",
+            "read_docs": "Read Documentation"
+        }
+    },
+    "license": {
+        "header": {
+            "badge": "OPEN SOURCE",
+            "title": "Apache License 2.0"
+        },
+        "copyright": {
+            "title": "Copyright & Attribution",
+            "text": "S-RCS is licensed under the <a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank' style='color: var(--primary);'>Apache License, Version 2.0</a>."
+        },
+        "permitted": {
+            "title": "What You CAN Do",
+            "items": {
+                "commercial": "Commercial Use: Use and sell for commercial purposes",
+                "modification": "Modification: Modify the source code freely",
+                "distribution": "Distribution: Distribute original or modified versions",
+                "patent": "Patent Use: Use contributors' patent claims",
+                "private": "Private Use: Use for private/internal purposes"
+            }
+        },
+        "requirements": {
+            "title": "Requirements",
+            "items": {
+                "include_license": "Include License: Include a copy of Apache 2.0 license",
+                "include_notice": "Include NOTICE: Include the NOTICE file with attribution",
+                "state_changes": "State Changes: Document significant modifications",
+                "copyright_notice": "Copyright Notice: Retain original copyright notices"
+            }
+        },
+        "warranty": {
+            "title": "No Warranty",
+            "text": "This software is provided 'AS IS' without warranty of any kind. The author is not liable for any damages arising from the use of this software."
+        },
+        "support": {
+            "title": "Professional Support",
+            "text": "While the software is free and open source, Professional Services (installation, enterprise support, SLA agreements, and training) are available from the author.",
+            "contact": "Contact for Enterprise Support"
+        },
+        "buttons": {
+            "view_license": "View Full License Text",
+            "view_notice": "View NOTICE File"
+        }
+    },
+    "changelog": {
+        "header": {
+            "badge": "DEV UPDATES",
+            "title": "Changelog",
+            "desc": "Stay up to date with the latest features, improvements, and fixes."
+        },
+        "status": {
+            "loading": "Loading updates...",
+            "error": "Could not load changelog from GitHub.",
+            "view_github": "View on GitHub"
+        }
     },
     "docs": {
         "sidebar": {
@@ -77,13 +316,6 @@
         },
         "post_install": {
             "title": "Post-Installation"
-        }
-    },
-    "features": {
-        "header": {
-            "badge": "FULL PLATFORM TOUR",
-            "title": "Platform Overview",
-            "desc": "Explore all 10 core modules of the S-RCS management platform."
         }
     }
 }

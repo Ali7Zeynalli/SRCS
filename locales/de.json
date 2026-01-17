@@ -2,9 +2,11 @@
     "navbar": {
         "home": "Startseite",
         "features": "Funktionen",
-        "docs": "Dokumentation",
+        "docs": "Doku",
+        "changelog": "Änderungen",
         "support": "Support",
-        "get_started": "Loslegen"
+        "github": "GitHub",
+        "download": "Herunterladen"
     },
     "hero": {
         "badge": "v1.3.0 Jetzt verfügbar",
@@ -21,13 +23,250 @@
         "platform": "Plattform"
     },
     "footer": {
-        "about": "S-RCS (Server Reporting and Controlling System) ist eine moderne webbasierte Lösung, die entwickelt wurde, um Verwaltungsaufgaben im Windows Active Directory zu vereinfachen und zu beschleunigen.",
-        "quick_links": "Quick Links",
-        "legal": "Rechtliches",
-        "license": "Lizenz",
-        "privacy": "Datenschutz",
-        "terms": "Nutzungsbedingungen",
+        "tagline": "Server Reporting and Controlling System.\nDie Zukunft des AD-Managements.",
+        "resources": "Ressourcen",
+        "docs": "Dokumentation",
+        "changelog": "Änderungsprotokoll",
+        "license": "Lizenz & Richtlinien",
+        "opensource": "Open Source",
+        "connect": "Verbinden",
+        "enterprise": "Unternehmenssupport",
+        "novusgate": "NovusGate VPN",
+        "srcs": "S-RCS",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
         "copyright": "© 2025 Ali Zeynalli. Alle Rechte vorbehalten."
+    },
+    "gallery": {
+        "badge": "SCHNITTSTELLE",
+        "title": "S-RCS in Aktion",
+        "subtitle": "Modern, intuitiv und für Effizienz entwickelt.",
+        "loading": "Galerie wird von GitHub geladen...",
+        "source": "Bilder live aus dem GitHub-Repository abgerufen.",
+        "error": "Galerie nicht gefunden.",
+        "fetch_error": "Laden der Bilder von GitHub fehlgeschlagen."
+    },
+    "install": {
+        "title": "Bereitstellung in Sekunden",
+        "desc": "Mit Docker können Sie das vollständige System in weniger als 2 Minuten zum Laufen bringen. Keine komplexe Zauberei erforderlich.",
+        "docker_ready": "Docker Bereit",
+        "clientless": "Clientlose Architektur",
+        "multi_platform": "Multi-Plattform (Windows/Linux)",
+        "read_docs": "Dokumentation Lesen"
+    },
+    "global_section": {
+        "badge": "GLOBAL BEREIT",
+        "title": "Unterstützte Sprachen",
+        "desc": "S-RCS ist vollständig mehrsprachig und ermöglicht die Verwaltung in Ihrer bevorzugten Sprache.",
+        "languages": {
+            "az": "Aserbaidschanisch",
+            "en": "Englisch",
+            "de": "Deutsch",
+            "ru": "Russisch",
+            "tr": "Türkisch"
+        }
+    },
+    "comparison": {
+        "badge": "VERGLEICH",
+        "title": "S-RCS vs Wettbewerber",
+        "desc": "Sehen Sie, wie S-RCS im Vergleich zu traditionellen und Enterprise-AD-Lösungen abschneidet.",
+        "table": {
+            "feature": "Funktion",
+            "aduc": "Windows ADUC",
+            "srcs": "S-RCS",
+            "price": "Preis",
+            "price_free": "Kostenlos (integriert)",
+            "price_paid": "Kostenpflichtig",
+            "price_free_srcs": "KOSTENLOS ✓",
+            "deployment": "Bereitstellung",
+            "hours": "Stunden",
+            "min_2": "< 2 Min",
+            "docker_ready": "Docker Bereit",
+            "web_interface": "Web-Interface",
+            "mobile_friendly": "Mobilfreundlich",
+            "user_mgmt": "Benutzerverwaltung",
+            "ou_mgmt": "OU/Gruppen/Computer",
+            "gpo_view": "GPO-Anzeige",
+            "helpdesk": "Integrierter Helpdesk",
+            "audit_logs": "Vollständige Audit-Logs",
+            "reports": "One-Click-Berichte",
+            "multi_lang": "Mehrsprachigkeit",
+            "limited": "Begrenzt",
+            "open_source": "Open Source"
+        },
+        "disclaimer": "ManageEngine und Adaxes sind eingetragene Marken. Preise sind ungefähre Angaben."
+    },
+    "pricing": {
+        "header": {
+            "badge": "SUPPORT & DIENSTLEISTUNGEN",
+            "title": "Professioneller Support",
+            "subtitle": "Holen Sie sich Expertenhilfe direkt vom Entwickler von S-RCS."
+        },
+        "community": {
+            "tag": "COMMUNITY",
+            "price": "Kostenlos",
+            "source_code": "Vollständiger Quellcode-Zugriff",
+            "self_hosted": "Selbst gehostet (Docker)",
+            "github_issues": "GitHub Issues Support",
+            "docs": "Standard-Dokumentation",
+            "priority": "Priorisierter Support",
+            "setup": "Einrichtungshilfe",
+            "btn": "Community-Support"
+        },
+        "professional": {
+            "tag": "PROFESSIONAL",
+            "recommended": "EMPFOHLEN",
+            "price": "Benutzerdefiniert",
+            "unit": "/Projekt",
+            "desc": "Detaillierte Installations-, Konfigurations- und Schulungsdienste, exklusiv bereitgestellt von Ali Zeynalli.",
+            "everything": "Alles in Community",
+            "installation": "Vollständige Installation & Bereitstellung",
+            "security": "AD & Sicherheitskonfiguration",
+            "training": "Mitarbeiterschulung & Onboarding",
+            "support": "Priorisierter Direktsupport",
+            "btn": "Angebot Anfordern"
+        },
+        "services_breakdown": {
+            "title": "Dienstleistungsübersicht",
+            "subtitle": "Umfassende professionelle Dienstleistungen für Ihren Erfolg.",
+            "installation": {
+                "title": "Vollständige Installation",
+                "desc": "Komplette Installation von S-RCS in Ihrer Infrastruktur unter Einhaltung von Best Practices."
+            },
+            "config": {
+                "title": "AD-Konfiguration",
+                "desc": "Einrichtung von Zertifikatsdiensten, LDAPS und Firewall-Konfiguration für sicheren Zugriff."
+            },
+            "support": {
+                "title": "Technischer Support",
+                "desc": "Priorisierte Problemlösung, Fehlerbehebung und laufende Wartung."
+            },
+            "training": {
+                "title": "Team-Schulung",
+                "desc": "Umfassende Schulungssitzungen, damit Ihr Team S-RCS meistert."
+            },
+            "cta": "Beratung Anfordern"
+        }
+    },
+    "contact": {
+        "title": "Kontaktinformationen",
+        "desc": "Kontaktieren Sie uns direkt für Beratungs- und Serviceanfragen.",
+        "email": "E-Mail Senden"
+    },
+    "features": {
+        "header": {
+            "badge": "VOLLE PLATTFORM-TOUR",
+            "title": "Plattform-Übersicht",
+            "desc": "Entdecken Sie alle 10 Kernmodule der S-RCS-Verwaltungsplattform."
+        },
+        "nav": {
+            "login": "Anmelden",
+            "settings": "Einstellungen"
+        },
+        "list": {
+            "login": {
+                "title": "Sichere Anmeldung",
+                "desc": "Sicherer Einstiegspunkt zu Ihrer Verwaltungskonsole. Modernes Design mit robuster Authentifizierung über LDAPS-Verschlüsselung."
+            },
+            "dashboard": {
+                "title": "Interaktives Dashboard",
+                "desc": "Vogelperspektive. Überwachen Sie Helpdesk-Tickets, Passwortstatus, Systemzustand und AD-Statistiken (Benutzer, Gruppen, Computer) in Echtzeit."
+            },
+            "users": {
+                "title": "Benutzerverwaltung",
+                "desc": "Optimierte Benutzerlebenszyklus-Verwaltung. Benutzer erstellen, Passwörter zurücksetzen, Konten entsperren und Eigenschaften mühelos verwalten."
+            },
+            "ous": {
+                "title": "OU-Verwaltung",
+                "desc": "Verwalten Sie Organisationseinheiten mit einer hierarchischen Baum- oder Tabellenansicht. Objekte erstellen, bearbeiten und verschieben mit intuitiven Modal-Schnittstellen."
+            },
+            "groups": {
+                "title": "Gruppenverwaltung",
+                "desc": "Sicherheits- und Verteilergruppen erstellen und verwalten. Mitglieder einfach hinzufügen oder entfernen und Gruppen innerhalb Ihrer Struktur organisieren."
+            },
+            "computers": {
+                "title": "Computer",
+                "desc": "Anzeigen und Verwalten aller domänenverbundenen Workstations und Server. AD-Status überwachen (aktiviert/deaktiviert) und Computerobjekte effizient verwalten."
+            },
+            "tasks": {
+                "badge": "NEU in v1.3.0",
+                "title": "Aufgabenverwaltung",
+                "desc": "Integriertes Helpdesk- & Ticketing-System. Support optimieren durch Erstellen von Tickets, Zuweisen von Prioritäten und Verfolgen des Status."
+            },
+            "reports": {
+                "title": "Erweitere Berichte",
+                "desc": "Umfassende Berichte für Benutzer, Gruppen, Computer und OUs erstellen. Daten in CSV- oder Excel-Formate für weitere Analysen exportieren."
+            },
+            "logs": {
+                "title": "Aktivitätsprotokolle",
+                "desc": "Umfassender Audit-Trail der Systemaktionen. Logs nach Datum suchen und filtern, um genau zu verfolgen, wer was getan hat."
+            },
+            "settings": {
+                "title": "Systemeinstellungen",
+                "desc": "Globale Systemeinstellungen konfigurieren. LDAPS-Verbindungen, Domänencontroller und rollenbasierte Zugriffskontrolle verwalten."
+            }
+        },
+        "cta": {
+            "badge": "BEREIT ZU STARTEN?",
+            "title": "Erleben Sie S-RCS Heute",
+            "desc": "Bereitstellung in unter 2 Minuten mit Docker. Für immer kostenlos.",
+            "download": "Jetzt Herunterladen",
+            "read_docs": "Dokumentation Lesen"
+        }
+    },
+    "license": {
+        "header": {
+            "badge": "OPEN SOURCE",
+            "title": "Apache Lizenz 2.0"
+        },
+        "copyright": {
+            "title": "Urheberrecht & Zuschreibung",
+            "text": "S-RCS ist unter der <a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank' style='color: var(--primary);'>Apache Lizenz, Version 2.0</a> lizenziert."
+        },
+        "permitted": {
+            "title": "Was Sie tun KÖNNEN",
+            "items": {
+                "commercial": "Kommerzielle Nutzung: Für kommerzielle Zwecke nutzen und verkaufen",
+                "modification": "Modifikation: Quellcode frei ändern",
+                "distribution": "Verteilung: Original- oder modifizierte Versionen verteilen",
+                "patent": "Patentnutzung: Patentansprüche der Mitwirkenden nutzen",
+                "private": "Private Nutzung: Für private/interne Zwecke nutzen"
+            }
+        },
+        "requirements": {
+            "title": "Anforderungen",
+            "items": {
+                "include_license": "Lizenz beifügen: Kopie der Apache 2.0 Lizenz beifügen",
+                "include_notice": "HINWEIS beifügen: NOTICE-Datei mit Zuschreibung beifügen",
+                "state_changes": "Änderungen angeben: Signifikante Änderungen dokumentieren",
+                "copyright_notice": "Urheberrechtshinweis: Ursprüngliche Urheberrechtshinweise beibehalten"
+            }
+        },
+        "warranty": {
+            "title": "Keine Garantie",
+            "text": "Diese Software wird 'WIE BESEHEN' ohne jegliche Garantie bereitgestellt. Der Autor haftet nicht für Schäden, die aus der Nutzung dieser Software entstehen."
+        },
+        "support": {
+            "title": "Professioneller Support",
+            "text": "Während die Software kostenlos und Open Source ist, sind Professionelle Dienstleistungen (Installation, Unternehmenssupport, SLA-Vereinbarungen und Schulungen) vom Autor verfügbar.",
+            "contact": "Kontakt für Unternehmenssupport"
+        },
+        "buttons": {
+            "view_license": "Vollständigen Lizenztext anzeigen",
+            "view_notice": "NOTICE-Datei anzeigen"
+        }
+    },
+    "changelog": {
+        "header": {
+            "badge": "ENTWICKLER-UPDATES",
+            "title": "Änderungsprotokoll",
+            "desc": "Bleiben Sie auf dem Laufenden mit den neuesten Funktionen, Verbesserungen und Korrekturen."
+        },
+        "status": {
+            "loading": "Updates werden geladen...",
+            "error": "Änderungsprotokoll konnte nicht von GitHub geladen werden.",
+            "view_github": "Auf GitHub ansehen"
+        }
     },
     "docs": {
         "sidebar": {
@@ -77,13 +316,6 @@
         },
         "post_install": {
             "title": "Nach der Installation"
-        }
-    },
-    "features": {
-        "header": {
-            "badge": "VOLLE PLATTFORM-TOUR",
-            "title": "Plattform-Übersicht",
-            "desc": "Entdecken Sie alle 10 Kernmodule der S-RCS-Verwaltungsplattform."
         }
     }
 }

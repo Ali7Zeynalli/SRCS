@@ -171,7 +171,8 @@ a { text-decoration: none; color: inherit; transition: 0.3s; }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 100px; /* Prevent header overlap */
     display: flex;
     align-items: center;
     text-align: center;
@@ -903,3 +904,8 @@ aside.docs-sidebar li a.active {
 .lang-dropdown:hover .lang-menu { display: block; }
 .lang-menu a { display: block; padding: 8px 12px; color: #cbd5e1; text-decoration: none; border-radius: 4px; transition: all 0.2s; }
 .lang-menu a:hover { background: rgba(59, 130, 246, 0.2); color: white; }
+
+/* Fix Helper for Dropdowns - Override global container hidden overflow */
+.navbar .nav-container, .navbar .container {
+    overflow: visible !important;
+}

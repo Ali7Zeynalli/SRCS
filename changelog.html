@@ -134,9 +134,9 @@
     <!-- Page Header -->
     <header class="section" style="padding-top: 150px; text-align: center;">
         <div class="container">
-            <div class="hero-badge" style="background: rgba(99, 102, 241, 0.1); color: #6366f1;">DEV UPDATES</div>
-            <h1>Changelog</h1>
-            <p>Stay up to date with the latest features, improvements, and fixes.</p>
+            <div class="hero-badge" style="background: rgba(99, 102, 241, 0.1); color: #6366f1;" data-i18n="changelog.header.badge">DEV UPDATES</div>
+            <h1 data-i18n="changelog.header.title">Changelog</h1>
+            <p data-i18n="changelog.header.desc">Stay up to date with the latest features, improvements, and fixes.</p>
         </div>
     </header>
 
@@ -147,7 +147,7 @@
                 <div id="changelog-content" class="markdown-body">
                     <div style="text-align: center; color: var(--text-secondary);">
                         <i class="fa-solid fa-circle-notch fa-spin" style="font-size: 2rem; margin-bottom: 20px;"></i>
-                        <p>Loading updates...</p>
+                        <p data-i18n="changelog.status.loading">Loading updates...</p>
                     </div>
                 </div>
             </div>
@@ -182,9 +182,9 @@
                 container.innerHTML = `
                     <div style="text-align: center; color: var(--danger);">
                         <i class="fa-solid fa-triangle-exclamation" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                        <p>Could not load changelog from GitHub.</p>
+                        <p data-i18n="changelog.status.error">Could not load changelog from GitHub.</p>
                         <p style="font-size: 0.9rem; color: var(--text-secondary);">${error.message}</p>
-                        <a href="https://github.com/Ali7Zeynalli/SRC/blob/main/CHANGELOG.md" target="_blank" class="btn btn-outline" style="margin-top: 20px;">View on GitHub</a>
+                        <a href="https://github.com/Ali7Zeynalli/SRC/blob/main/CHANGELOG.md" target="_blank" class="btn btn-outline" style="margin-top: 20px;" data-i18n="changelog.status.view_github">View on GitHub</a>
                     </div>
                 `;
             });

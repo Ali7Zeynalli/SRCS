@@ -74,12 +74,13 @@ class I18n {
     }
 
     updateActiveFlag(lang) {
-        // Update header text if element exists
-        const langLabel = document.getElementById('current-lang');
-        if (langLabel) {
-            langLabel.textContent = lang.toUpperCase();
+        const langEl = document.getElementById('current-lang');
+        if (langEl) {
+            langEl.textContent = lang.toUpperCase();
+        } else {
+            // Might not be loaded yet
+            console.log('Language UI element not found, retrying...');
         }
-        console.log(`Language set to: ${lang}`);
     }
 }
 

@@ -3,8 +3,10 @@
         "home": "Ana Səhifə",
         "features": "Xüsusiyyətlər",
         "docs": "Sənədlər",
+        "changelog": "Yeniliklər",
         "support": "Dəstək",
-        "get_started": "Başla"
+        "github": "GitHub",
+        "download": "Yüklə"
     },
     "hero": {
         "badge": "v1.3.0 İndi Mövcuddur",
@@ -21,13 +23,250 @@
         "platform": "Platforma"
     },
     "footer": {
-        "about": "S-RCS (Server Reporting and Controlling System), Windows Active Directory idarəetmə tapşırıqlarını sadələşdirmək və sürətləndirmək üçün hazırlanmış müasir veb əsaslı həlldir.",
-        "quick_links": "Keçidlər",
-        "legal": "Hüquqi",
-        "license": "Lisenziya",
-        "privacy": "Məxfilik Siyasəti",
-        "terms": "Xidmət Şərtləri",
+        "tagline": "Server Reportlama və İdarəetmə Sistemi.\nAD idarəetməsinin gələcəyi.",
+        "resources": "Resurslar",
+        "docs": "Sənədlər",
+        "changelog": "Yeniliklər",
+        "license": "Lisenziya və Siyasət",
+        "opensource": "Açıq Mənbə",
+        "connect": "Əlaqə",
+        "enterprise": "Korporativ Dəstək",
+        "novusgate": "NovusGate VPN",
+        "srcs": "S-RCS",
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
         "copyright": "© 2025 Əli Zeynallı. Bütün hüquqlar qorunur."
+    },
+    "gallery": {
+        "badge": "İNTERFEYS",
+        "title": "S-RCS İş Başında",
+        "subtitle": "Müasir, intuitiv və səmərəlilik üçün dizayn edilmişdir.",
+        "loading": "Qalereya GitHub-dan yüklənir...",
+        "source": "Şəkillər GitHub repozitoriyasından canlı yüklənir.",
+        "error": "Qalereya tapılmadı.",
+        "fetch_error": "Şəkilləri yükləmək mümkün olmadı."
+    },
+    "install": {
+        "title": "Saniyələr İçində Quraşdırma",
+        "desc": "Docker ilə tam sistemi 2 dəqiqədən az müddətdə işə sala bilərsiniz. Mürəkkəb əməliyyatlara ehtiyac yoxdur.",
+        "docker_ready": "Docker Hazır",
+        "clientless": "Kliyentsiz Memarlıq",
+        "multi_platform": "Çox-platformalı (Windows/Linux)",
+        "read_docs": "Sənədləri Oxu"
+    },
+    "global_section": {
+        "badge": "QLOBAL HAZIRLIQ",
+        "title": "Dəstəklənən Dillər",
+        "desc": "S-RCS tamamilə çoxdillidir və idarəetməni öz dilinizdə aparmağa imkan verir.",
+        "languages": {
+            "az": "Azərbaycan",
+            "en": "İngilis",
+            "de": "Alman",
+            "ru": "Rus",
+            "tr": "Türk"
+        }
+    },
+    "comparison": {
+        "badge": "MÜQAYİSƏ",
+        "title": "S-RCS Rəqiblərə Qarşı",
+        "desc": "S-RCS-in ənənəvi və korporativ AD idarəetmə həlləri ilə necə müqayisə olunduğuna baxın.",
+        "table": {
+            "feature": "Xüsusiyyət",
+            "aduc": "Windows ADUC",
+            "srcs": "S-RCS",
+            "price": "Qiymət",
+            "price_free": "Pulsuz (daxili)",
+            "price_paid": "Ödənişli",
+            "price_free_srcs": "PULSUZ ✓",
+            "deployment": "Quraşdırma",
+            "hours": "Saatlar",
+            "min_2": "< 2 dəq",
+            "docker_ready": "Docker Hazır",
+            "web_interface": "Veb İnterfeys",
+            "mobile_friendly": "Mobil Uyğunluq",
+            "user_mgmt": "İstifadəçi İdarəetməsi",
+            "ou_mgmt": "OU/Qrup/Kompüter",
+            "gpo_view": "GPO Görüntüləmə",
+            "helpdesk": "Daxili Helpdesk",
+            "audit_logs": "Tam Audit Loqları",
+            "reports": "Bir-Kliklə Hesabatlar",
+            "multi_lang": "Çoxdilli Dəstək",
+            "limited": "Məhdud",
+            "open_source": "Açıq Mənbə"
+        },
+        "disclaimer": "ManageEngine və Adaxes qeydiyyatdan keçmiş ticarət nişanlarıdır. Qiymətlər təxminidir və dəyişə bilər."
+    },
+    "pricing": {
+        "header": {
+            "badge": "DƏSTƏK VƏ XİDMƏTLƏR",
+            "title": "Peşəkar Dəstək",
+            "subtitle": "Birbaşa S-RCS yaradıcısından ekspert köməyi alın."
+        },
+        "community": {
+            "tag": "İCMA",
+            "price": "Pulsuz",
+            "source_code": "Tam Mənbə Koduna Çıxış",
+            "self_hosted": "Self-Hosted (Docker)",
+            "github_issues": "GitHub Issues Dəstəyi",
+            "docs": "Standart Sənədləşdirmə",
+            "priority": "Prioritet Dəstək",
+            "setup": "Quraşdırma Köməyi",
+            "btn": "İcma Dəstəyi"
+        },
+        "professional": {
+            "tag": "PEŞƏKAR",
+            "recommended": "TÖVSİYƏ OLUNAN",
+            "price": "Fərdi",
+            "unit": "/layihə",
+            "desc": "Əli Zeynallı tərəfindən eksklüziv olaraq təqdim edilən ətraflı quraşdırma, konfiqurasiya və təlim xidmətləri.",
+            "everything": "İcma paketindəki hər şey",
+            "installation": "Tam Quraşdırma və Tətbiq",
+            "security": "AD və Təhlükəsizlik Konfiqurasiyası",
+            "training": "Personal Təlimi və Hazırlığı",
+            "support": "Prioritet Birbaşa Dəstək",
+            "btn": "Təklif Alın"
+        },
+        "services_breakdown": {
+            "title": "Xidmət Bölgüsü",
+            "subtitle": "Uğurunuzu təmin etmək üçün hərtərəfli peşəkar xidmətlər.",
+            "installation": {
+                "title": "Tam Quraşdırma",
+                "desc": "Ən yaxşı təcrübələri təmin edərək infrastrukturunuzda S-RCS-in tam quraşdırılması."
+            },
+            "config": {
+                "title": "AD Konfiqurasiyası",
+                "desc": "Təhlükəsiz giriş üçün Sertifikat Xidmətləri, LDAPS və Firewall konfiqurasiyası."
+            },
+            "support": {
+                "title": "Texniki Dəstək",
+                "desc": "Prioritet problem həlli, nasazlıqların aradan qaldırılması və davamlı baxım."
+            },
+            "training": {
+                "title": "Komanda Təlimi",
+                "desc": "Komandanızın S-RCS-i mənimsəməsinə kömək etmək üçün ətraflı təlim sessiyaları."
+            },
+            "cta": "Konsultasiya İstəyin"
+        }
+    },
+    "contact": {
+        "title": "Əlaqə Məlumatı",
+        "desc": "Konsultasiya və xidmət sorğuları üçün birbaşa əlaqə saxlayın.",
+        "email": "Email Göndər"
+    },
+    "features": {
+        "header": {
+            "badge": "TAM PLATFORMA TURU",
+            "title": "Platforma İcmalı",
+            "desc": "S-RCS idarəetmə platformasının bütün 10 əsas modulunu kəşf edin."
+        },
+        "nav": {
+            "login": "Giriş",
+            "settings": "Tənzimləmələr"
+        },
+        "list": {
+            "login": {
+                "title": "Təhlükəsiz Giriş",
+                "desc": "İdarəetmə panelinə təhlükəsiz giriş nöqtəsi. LDAPS şifrələməsi ilə güclü autentifikasiya və müasir dizayn."
+            },
+            "dashboard": {
+                "title": "İnteraktiv İdarə Paneli",
+                "desc": "Quş baxışı ilə nəzarət. Helpdesk biletlərini, Şifrə statusunu, Sistem Sağlamlığını və AD statistikasını (İstifadəçilər, Qruplar, Kompüterlər) real vaxtda izləyin."
+            },
+            "users": {
+                "title": "İstifadəçi İdarəetməsi",
+                "desc": "İstifadəçi həyat dövrünün sadələşdirilmiş idarə edilməsi. İstifadəçilər yaradın, şifrələri sıfırlayın, hesabları kiliddən çıxarın və xüsusiyyətləri asanlıqla idarə edin."
+            },
+            "ous": {
+                "title": "OU İdarəetməsi",
+                "desc": "Təşkilat Vahidlərini iyerarxik ağac və ya cədvəl görünüşü ilə idarə edin. İntuitiv modal interfeyslərdən istifadə edərək obyektlər yaradın, redaktə edin və OU-lar arasında daşıyın."
+            },
+            "groups": {
+                "title": "Qrup İdarəetməsi",
+                "desc": "Təhlükəsizlik və Paylama qruplarını yaradın və idarə edin. Üzvləri asanlıqla əlavə edin və ya silin və qrupları strukturunuz daxilində təşkil edin."
+            },
+            "computers": {
+                "title": "Kompüterlər",
+                "desc": "Bütün domenə qoşulmuş iş stansiyalarına və serverlərinə baxın və idarə edin. AD statusunu (aktiv/deaktiv) izləyin və kompüter obyektlərini səmərəli idarə edin."
+            },
+            "tasks": {
+                "badge": "v1.3.0-da YENİ",
+                "title": "Tapşırıq İdarəetməsi",
+                "desc": "İnteqrasiya edilmiş Helpdesk sistemi. Biletlər yaradaraq, prioritetlər təyin edərək və statusu izləyərək dəstəyi sadələşdirin."
+            },
+            "reports": {
+                "title": "Qabaqcıl Hesabat",
+                "desc": "İstifadəçilər, Qruplar, Kompüterlər və OU-lar üçün ətraflı hesabatlar yaradın. Məlumatları CSV və ya Excel formatında ixrac edin."
+            },
+            "logs": {
+                "title": "Fəaliyyət Logları",
+                "desc": "Sistem hərəkətlərinin ətraflı auditi. Kimin nə etdiyini dəqiq izləmək üçün logları tarixə görə axtarın və filtrləyin."
+            },
+            "settings": {
+                "title": "Sistem Tənzimləmələri",
+                "desc": "Qlobal sistem seçimlərini konfiqurasiya edin. LDAPS əlaqələrini, Domen Kontrollerlərini və Admin/İcazəli Qruplar vasitəsilə Rol-Əsaslı Giriş Nəzarətini idarə edin."
+            }
+        },
+        "cta": {
+            "badge": "BAŞLAMAGA HAZIRSIZ?",
+            "title": "S-RCS-i Bu Gün Təcrübədən Keçirin",
+            "desc": "Docker ilə 2 dəqiqədən az müddətdə quraşdırın. Həmişəlik pulsuz.",
+            "download": "İndi Yüklə",
+            "read_docs": "Sənədləri Oxu"
+        }
+    },
+    "license": {
+        "header": {
+            "badge": "AÇIQ MƏNBƏ",
+            "title": "Apache Lisenziyası 2.0"
+        },
+        "copyright": {
+            "title": "Müəllif Hüququ və İstinad",
+            "text": "S-RCS <a href='https://www.apache.org/licenses/LICENSE-2.0' target='_blank' style='color: var(--primary);'>Apache Lisenziyası, Versiya 2.0</a> altında lisenziyalaşdırılıb."
+        },
+        "permitted": {
+            "title": "Nə Edə Bilərsiniz",
+            "items": {
+                "commercial": "Kommersiya İstifadəsi: Kommersiya məqsədləri üçün istifadə edin və satın",
+                "modification": "Dəyişdirmə: Mənbə kodunu sərbəst şəkildə dəyişdirin",
+                "distribution": "Paylama: Orijinal və ya dəyişdirilmiş versiyaları paylayın",
+                "patent": "Patent İstifadəsi: Töhfəçilərin patent iddialarından istifadə edin",
+                "private": "Şəxsi İstifadə: Şəxsi/daxili məqsədlər üçün istifadə edin"
+            }
+        },
+        "requirements": {
+            "title": "Tələblər",
+            "items": {
+                "include_license": "Lisenziyanı Daxil Edin: Apache 2.0 lisenziyasının surətini əlavə edin",
+                "include_notice": "XƏBƏRDARLIĞI Daxil Edin: İstinad ilə NOTICE faylını əlavə edin",
+                "state_changes": "Dəyişiklikləri Bildirin: Əhəmiyyətli dəyişiklikləri sənədləşdirin",
+                "copyright_notice": "Müəllif Hüququ Bildirişi: Orijinal müəllif hüququ bildirişlərini saxlayın"
+            }
+        },
+        "warranty": {
+            "title": "Zəmanət Yoxdur",
+            "text": "Bu proqram təminatı heç bir zəmanət olmadan 'OLDUĞU KİMİ' təqdim edilir. Müəllif bu proqramın istifadəsindən yaranan hər hansı zərərə görə məsuliyyət daşımır."
+        },
+        "support": {
+            "title": "Peşəkar Dəstək",
+            "text": "Proqram təminatı pulsuz və açıq mənbəli olsa da, Peşəkar Xidmətlər (quraşdırma, korporativ dəstək, SLA müqavilələri və təlim) müəllif tərəfindən təklif olunur.",
+            "contact": "Korporativ Dəstək üçün Əlaqə"
+        },
+        "buttons": {
+            "view_license": "Tam Lisenziya Mətninə Baxın",
+            "view_notice": "NOTICE Faylına Baxın"
+        }
+    },
+    "changelog": {
+        "header": {
+            "badge": "DEV YENİLİKLƏRİ",
+            "title": "Yeniliklər",
+            "desc": "Ən son xüsusiyyətlər, təkmilləşdirmələr və düzəlişlər haqqında məlumatlı olun."
+        },
+        "status": {
+            "loading": "Yeniliklər yüklənir...",
+            "error": "Yenilikləri GitHub-dan yükləmək mümkün olmadı.",
+            "view_github": "GitHub-da Baxın"
+        }
     },
     "docs": {
         "sidebar": {
@@ -77,13 +316,6 @@
         },
         "post_install": {
             "title": "Quraşdırmadan Sonra"
-        }
-    },
-    "features": {
-        "header": {
-            "badge": "TAM PLATFORMA TURU",
-            "title": "Platforma İcmalı",
-            "desc": "S-RCS idarəetmə platformasının bütün 10 əsas modulunu kəşf edin."
         }
     }
 }

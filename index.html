@@ -18,7 +18,7 @@
     <header class="hero">
         <div class="container hero-content">
             <div class="hero-badge" data-i18n="hero.badge">v1.3.0 Available Now</div>
-            <h1><span data-i18n="hero.title_prefix">Revolutionize Your</span> <span style="background: var(--grad-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" data-i18n="hero.title_highlight">Active Directory</span> <span data-i18n="hero.title_suffix">Management</span></h1>
+            <h1><span data-i18n="hero.title_prefix">Revolutionize Your</span> <span style="background: var(--grad-primary); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;" data-i18n="hero.title_highlight">Active Directory</span> <span data-i18n="hero.title_suffix">Management</span></h1>
             
             <div style="display: flex; gap: 10px; justify-content: center; margin: 20px 0; flex-wrap: wrap;">
                 <a href="https://github.com/Ali7Zeynalli/SRC/stargazers"><img src="https://img.shields.io/github/stars/Ali7Zeynalli/SRC?style=for-the-badge&color=blue&logo=github" alt="GitHub Stars"></a>
@@ -83,18 +83,18 @@
     <!-- Gallery Section -->
     <section class="section">
         <div class="container" style="text-align: center;">
-            <div class="hero-badge">INTERFACE</div>
-            <h2>See S-RCS in Action</h2>
-            <p>Modern, intuitive, and designed for efficiency.</p>
+            <div class="hero-badge" data-i18n="gallery.badge">INTERFACE</div>
+            <h2 data-i18n="gallery.title">See S-RCS in Action</h2>
+            <p data-i18n="gallery.subtitle">Modern, intuitive, and designed for efficiency.</p>
 
             <!-- Dynamic Gallery -->
             <div id="dynamic-gallery" class="gallery-scroll" style="display: flex; gap: 20px; overflow-x: auto; padding: 20px 0; scroll-snap-type: x mandatory; min-height: 400px; align-items: center;">
                 <div style="width: 100%; text-align: center; color: var(--text-secondary);">
                     <i class="fa-solid fa-circle-notch fa-spin" style="font-size: 2rem; margin-bottom: 20px;"></i>
-                    <p>Loading gallery from GitHub...</p>
+                    <p data-i18n="gallery.loading">Loading gallery from GitHub...</p>
                 </div>
             </div>
-            <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 10px;">Images fetched live from GitHub Repository.</p>
+            <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 10px;" data-i18n="gallery.source">Images fetched live from GitHub Repository.</p>
         </div>
     </section>
 
@@ -152,14 +152,14 @@
         <div class="container">
             <div style="display: flex; gap: 50px; align-items: center; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 300px;">
-                    <h2>Deployment in Seconds</h2>
-                    <p>With Docker, you can have the full system running in under 2 minutes. No complex wizardry required.</p>
+                    <h2 data-i18n="install.title">Deployment in Seconds</h2>
+                    <p data-i18n="install.desc">With Docker, you can have the full system running in under 2 minutes. No complex wizardry required.</p>
                     <ul style="list-style: none; margin-bottom: 30px;">
-                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--success); margin-right: 10px;"></i> Docker Ready</li>
-                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--success); margin-right: 10px;"></i> Clientless Architecture</li>
-                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--success); margin-right: 10px;"></i> Multi-platform (Windows/Linux)</li>
+                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--success); margin-right: 10px;"></i> <span data-i18n="install.docker_ready">Docker Ready</span></li>
+                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--success); margin-right: 10px;"></i> <span data-i18n="install.clientless">Clientless Architecture</span></li>
+                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--success); margin-right: 10px;"></i> <span data-i18n="install.multi_platform">Multi-platform (Windows/Linux)</span></li>
                     </ul>
-                    <a href="docs.html" class="btn btn-primary">Read Documentation</a>
+                    <a href="docs.html" class="btn btn-primary" data-i18n="install.read_docs">Read Documentation</a>
                 </div>
                 <div style="flex: 1; min-width: 300px; background: #1e1e1e; padding: 25px; border-radius: 12px; font-family: monospace; border: 1px solid #333;">
                     <div style="color: #6a9955;"># Clone the repository</div>
@@ -176,16 +176,16 @@
     <!-- Multi-Language Support -->
     <section class="section" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
         <div class="container" style="text-align: center;">
-            <div class="hero-badge">GLOBAL READY</div>
-            <h2>Supported Languages</h2>
-            <p>S-RCS is fully multilingual, allowing administration in your preferred language.</p>
+            <div class="hero-badge" data-i18n="global_section.badge">GLOBAL READY</div>
+            <h2 data-i18n="global_section.title">Supported Languages</h2>
+            <p data-i18n="global_section.desc">S-RCS is fully multilingual, allowing administration in your preferred language.</p>
             
             <div style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
-                <div class="lang-card"><span style="font-size: 2.5rem;">🇦🇿</span><br>Azerbaijani</div>
-                <div class="lang-card"><span style="font-size: 2.5rem;">🇬🇧</span><br>English</div>
-                <div class="lang-card"><span style="font-size: 2.5rem;">🇩🇪</span><br>German</div>
-                <div class="lang-card"><span style="font-size: 2.5rem;">🇷🇺</span><br>Russian</div>
-                <div class="lang-card"><span style="font-size: 2.5rem;">🇹🇷</span><br>Turkish</div>
+                <div class="lang-card"><span style="font-size: 2.5rem;">🇦🇿</span><br><span data-i18n="global_section.languages.az">Azerbaijani</span></div>
+                <div class="lang-card"><span style="font-size: 2.5rem;">🇬🇧</span><br><span data-i18n="global_section.languages.en">English</span></div>
+                <div class="lang-card"><span style="font-size: 2.5rem;">🇩🇪</span><br><span data-i18n="global_section.languages.de">German</span></div>
+                <div class="lang-card"><span style="font-size: 2.5rem;">🇷🇺</span><br><span data-i18n="global_section.languages.ru">Russian</span></div>
+                <div class="lang-card"><span style="font-size: 2.5rem;">🇹🇷</span><br><span data-i18n="global_section.languages.tr">Turkish</span></div>
             </div>
         </div>
     </section>
@@ -194,29 +194,29 @@
     <section class="section">
         <div class="container">
             <div style="text-align: center; margin-bottom: 50px;">
-                <div class="hero-badge" style="background: rgba(239, 68, 68, 0.1); color: var(--danger);">COMPARISON</div>
-                <h2>S-RCS vs Competitors</h2>
-                <p>See how S-RCS compares to traditional and enterprise AD management solutions.</p>
+                <div class="hero-badge" style="background: rgba(239, 68, 68, 0.1); color: var(--danger);" data-i18n="comparison.badge">COMPARISON</div>
+                <h2 data-i18n="comparison.title">S-RCS vs Competitors</h2>
+                <p data-i18n="comparison.desc">See how S-RCS compares to traditional and enterprise AD management solutions.</p>
             </div>
 
             <div style="overflow-x: auto; margin: 0 auto;">
                 <table style="width: 100%; min-width: 900px; border-collapse: collapse; background: var(--bg-card); border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.3);">
                     <thead>
                         <tr style="background: rgba(59, 130, 246, 0.15);">
-                            <th style="padding: 18px; text-align: left; border-bottom: 2px solid var(--border); font-size: 0.9rem;">Feature</th>
-                            <th style="padding: 18px; text-align: center; border-bottom: 2px solid var(--border); font-size: 0.9rem; opacity: 0.8;">Windows ADUC</th>
+                            <th style="padding: 18px; text-align: left; border-bottom: 2px solid var(--border); font-size: 0.9rem;" data-i18n="comparison.table.feature">Feature</th>
+                            <th style="padding: 18px; text-align: center; border-bottom: 2px solid var(--border); font-size: 0.9rem; opacity: 0.8;" data-i18n="comparison.table.aduc">Windows ADUC</th>
                             <th style="padding: 18px; text-align: center; border-bottom: 2px solid var(--border); font-size: 0.9rem; opacity: 0.8;">ManageEngine</th>
                             <th style="padding: 18px; text-align: center; border-bottom: 2px solid var(--border); font-size: 0.9rem; opacity: 0.8;">Adaxes</th>
-                            <th style="padding: 18px; text-align: center; border-bottom: 2px solid var(--border); background: rgba(59, 130, 246, 0.15); color: var(--primary); font-size: 0.95rem; font-weight: 700;">S-RCS ⭐</th>
+                            <th style="padding: 18px; text-align: center; border-bottom: 2px solid var(--border); background: rgba(59, 130, 246, 0.15); color: var(--primary); font-size: 0.95rem; font-weight: 700;" data-i18n="comparison.table.srcs">S-RCS ⭐</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td style="padding: 15px 18px; border-bottom: 1px solid var(--border); font-weight: 600;">💰 Price</td>
-                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border);">Free (built-in)</td>
-                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border); color: var(--danger);"><i class="fa-solid fa-dollar-sign"></i> Paid</td>
-                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border); color: var(--danger);"><i class="fa-solid fa-dollar-sign"></i> Paid</td>
-                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border); background: rgba(59, 130, 246, 0.08); color: var(--success); font-weight: bold;">FREE ✓</td>
+                            <td style="padding: 15px 18px; border-bottom: 1px solid var(--border); font-weight: 600;" data-i18n="comparison.table.price">💰 Price</td>
+                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border);" data-i18n="comparison.table.price_free">Free (built-in)</td>
+                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border); color: var(--danger);"><i class="fa-solid fa-dollar-sign"></i> <span data-i18n="comparison.table.price_paid">Paid</span></td>
+                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border); color: var(--danger);"><i class="fa-solid fa-dollar-sign"></i> <span data-i18n="comparison.table.price_paid">Paid</span></td>
+                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border); background: rgba(59, 130, 246, 0.08); color: var(--success); font-weight: bold;" data-i18n="comparison.table.price_free_srcs">FREE ✓</td>
                         </tr>
                         <tr>
                             <td style="padding: 15px 18px; border-bottom: 1px solid var(--border); font-weight: 600;">🚀 Deployment</td>
@@ -289,14 +289,14 @@
                             <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border); background: rgba(59, 130, 246, 0.08);"><i class="fa-solid fa-check" style="color: var(--success);"></i></td>
                         </tr>
                         <tr>
-                            <td style="padding: 15px 18px; border-bottom: 1px solid var(--border); font-weight: 600;">🌍 Multi-Language</td>
+                            <td style="padding: 15px 18px; border-bottom: 1px solid var(--border); font-weight: 600;" data-i18n="comparison.table.multi_lang">🌍 Multi-Language</td>
                             <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border);"><i class="fa-solid fa-xmark" style="color: var(--danger);"></i></td>
-                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border);"><i class="fa-solid fa-minus" style="color: var(--warning);"></i> Limited</td>
-                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border);"><i class="fa-solid fa-minus" style="color: var(--warning);"></i> Limited</td>
+                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border);"><i class="fa-solid fa-minus" style="color: var(--warning);"></i> <span data-i18n="comparison.table.limited">Limited</span></td>
+                            <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border);"><i class="fa-solid fa-minus" style="color: var(--warning);"></i> <span data-i18n="comparison.table.limited">Limited</span></td>
                             <td style="padding: 15px; text-align: center; border-bottom: 1px solid var(--border); background: rgba(59, 130, 246, 0.08);"><i class="fa-solid fa-check" style="color: var(--success);"></i> 5</td>
                         </tr>
                         <tr>
-                            <td style="padding: 15px 18px; font-weight: 600;">🔓 Open Source</td>
+                            <td style="padding: 15px 18px; font-weight: 600;" data-i18n="comparison.table.open_source">🔓 Open Source</td>
                             <td style="padding: 15px; text-align: center;"><i class="fa-solid fa-xmark" style="color: var(--danger);"></i></td>
                             <td style="padding: 15px; text-align: center;"><i class="fa-solid fa-xmark" style="color: var(--danger);"></i></td>
                             <td style="padding: 15px; text-align: center;"><i class="fa-solid fa-xmark" style="color: var(--danger);"></i></td>
@@ -320,36 +320,36 @@
     <section class="section">
         <div class="container">
             <div style="text-align: center; margin-bottom: 50px;">
-                <div class="hero-badge" style="background: rgba(34, 197, 94, 0.1); color: var(--success);">ENTERPRISE</div>
-                <h2>Professional Services</h2>
-                <p>Need help? We offer paid support packages for enterprise deployments.</p>
+                <div class="hero-badge" style="background: rgba(34, 197, 94, 0.1); color: var(--success);" data-i18n="pricing.header.badge">ENTERPRISE</div>
+                <h2 data-i18n="pricing.header.title">Professional Services</h2>
+                <p data-i18n="pricing.header.subtitle">Need help? We offer paid support packages for enterprise deployments.</p>
             </div>
 
             <div class="services-grid">
                 <div class="service-card">
                     <div class="icon-box" style="background: rgba(34, 197, 94, 0.1); color: var(--success);"><i class="fa-solid fa-wrench"></i></div>
-                    <h3>Full Installation</h3>
-                    <p>Complete installation of S-RCS in your infrastructure, ensuring best practices.</p>
+                    <h3 data-i18n="pricing.services_breakdown.installation.title">Full Installation</h3>
+                    <p data-i18n="pricing.services_breakdown.installation.desc">Complete installation of S-RCS in your infrastructure, ensuring best practices.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon-box" style="background: rgba(34, 197, 94, 0.1); color: var(--success);"><i class="fa-solid fa-server"></i></div>
-                    <h3>AD Configuration</h3>
-                    <p>Setup of Certificate Services, LDAPS, and Firewall configuration for secure access.</p>
+                    <h3 data-i18n="pricing.services_breakdown.config.title">AD Configuration</h3>
+                    <p data-i18n="pricing.services_breakdown.config.desc">Setup of Certificate Services, LDAPS, and Firewall configuration for secure access.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon-box" style="background: rgba(34, 197, 94, 0.1); color: var(--success);"><i class="fa-solid fa-headset"></i></div>
-                    <h3>Technical Support</h3>
-                    <p>Priority problem resolution, troubleshooting, and ongoing maintenance.</p>
+                    <h3 data-i18n="pricing.services_breakdown.support.title">Technical Support</h3>
+                    <p data-i18n="pricing.services_breakdown.support.desc">Priority problem resolution, troubleshooting, and ongoing maintenance.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon-box" style="background: rgba(34, 197, 94, 0.1); color: var(--success);"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3>Team Training</h3>
-                    <p>Comprehensive training sessions to help your team master S-RCS.</p>
+                    <h3 data-i18n="pricing.services_breakdown.training.title">Team Training</h3>
+                    <p data-i18n="pricing.services_breakdown.training.desc">Comprehensive training sessions to help your team master S-RCS.</p>
                 </div>
             </div>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="mailto:Ali.Z.Zeynalli@gmail.com" class="btn btn-primary" style="background: #22c55e; box-shadow: 0 4px 14px rgba(34, 197, 94, 0.4);">
+                <a href="mailto:Ali.Z.Zeynalli@gmail.com" class="btn btn-primary" style="background: #22c55e; box-shadow: 0 4px 14px rgba(34, 197, 94, 0.4);" data-i18n="pricing.services_breakdown.cta">
                     <i class="fa-solid fa-envelope"></i> Request Consultation
                 </a>
             </div>
