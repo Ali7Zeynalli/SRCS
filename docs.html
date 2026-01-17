@@ -300,12 +300,15 @@ Restart-Computer</code></pre>
                     </div>
 
                     <div class="step">
-                        <h3 data-i18n="docs.wizard.step6.title">Step 6: Security Cleanup</h3>
-                        <p data-i18n="docs.wizard.step6.desc">To prevent re-installation, you must archive the installer.</p>
-                        <ol>
-                            <li data-i18n="docs.wizard.step6.steps.1">Type "UNINSTALL".</li>
-                            <li data-i18n="docs.wizard.step6.steps.2">Click "Archive Files".</li>
-                        </ol>
+                        <h3 data-i18n="docs.wizard.step6.title">Step 6: Security Lock</h3>
+                        <p data-i18n="docs.wizard.step6.desc">After installation, the system locks automatically to prevent unauthorized access. If you try to access the installer again, you will see the "System Locked" screen.</p>
+                        <div class="alert" style="background: rgba(14, 165, 233, 0.1); border-left: 4px solid var(--primary); padding: 15px; border-radius: 4px; margin-bottom: 15px;">
+                            <strong data-i18n="docs.wizard.step6.reinstall.title">To Reinstall:</strong>
+                            <ol style="margin: 10px 0 0 20px;">
+                                <li data-i18n="docs.wizard.step6.reinstall.1">Navigate to <code>www/config/</code></li>
+                                <li data-i18n="docs.wizard.step6.reinstall.2">Delete the <code>.installed</code> file</li>
+                            </ol>
+                        </div>
                         <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/6.png" alt="Step 6" style="width: 100%; max-width: 600px; border-radius: 8px; border: var(--border);">
                     </div>
                 </div>

@@ -463,11 +463,12 @@
                 "desc": "Tənzimləmələri yoxlayın və Quraşdır klikləyin. Sizə <strong>Lisenziya Açarı</strong> veriləcək."
             },
             "step6": {
-                "title": "Addım 6: Təhlükəsizlik Təmizliyi",
-                "desc": "Yenidən quraşdırmanın qarşısını almaq üçün quraşdırıcını arxivləməlisiniz.",
-                "steps": {
-                    "1": "'UNINSTALL' yazın.",
-                    "2": "'Arxivlə' düyməsini klikləyin."
+                "title": "Addım 6: Təhlükəsizlik Kilidi",
+                "desc": "Quraşdırmadan sonra sistem icazəsiz girişin qarşısını almaq üçün avtomatik kilidlənir. Əgər installerə yenidən daxil olmağa çalışsanız, 'System Locked' ekranını görəcəksiniz.",
+                "reinstall": {
+                    "title": "Yenidən Quraşdırma üçün:",
+                    "1": "<code>www/config/</code> qovluğuna keçin",
+                    "2": "<code>.installed</code> faylını silin"
                 }
             }
         },

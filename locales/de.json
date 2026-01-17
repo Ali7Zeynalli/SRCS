@@ -463,11 +463,12 @@
                 "desc": "Überprüfen Sie die Einstellungen und klicken Sie auf Installieren. Sie erhalten einen <strong>Lizenzschlüssel</strong>."
             },
             "step6": {
-                "title": "Schritt 6: Sicherheitsbereinigung",
-                "desc": "Um eine Neuinstallation zu verhindern, müssen Sie den Installer archivieren.",
-                "steps": {
-                    "1": "Geben Sie 'UNINSTALL' ein.",
-                    "2": "Klicken Sie auf 'Dateien archivieren'."
+                "title": "Schritt 6: Sicherheitssperre",
+                "desc": "Nach der Installation wird das System automatisch gesperrt, um unbefugten Zugriff zu verhindern. Wenn Sie erneut auf den Installer zugreifen, wird der Bildschirm 'System Locked' angezeigt.",
+                "reinstall": {
+                    "title": "Zum Neuinstallieren:",
+                    "1": "Navigieren Sie zum Ordner <code>www/config/</code>",
+                    "2": "Löschen Sie die Datei <code>.installed</code>"
                 }
             }
         },

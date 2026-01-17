@@ -463,11 +463,12 @@
                 "desc": "Ayarları inceleyin ve Kur'a tıklayın. Bir <strong>Lisans Anahtarı</strong> alacaksınız."
             },
             "step6": {
-                "title": "Adım 6: Güvenlik Temizliği",
-                "desc": "Yeniden kurulumu önlemek için kurulum programını arşivlemelisiniz.",
-                "steps": {
-                    "1": "'UNINSTALL' yazın.",
-                    "2": "'Dosyaları Arşivle'ye tıklayın."
+                "title": "Adım 6: Güvenlik Kilidi",
+                "desc": "Kurulumdan sonra, yetkisiz erişimi önlemek için sistem otomatik olarak kilitlenir. Kuruluma tekrar erişmeye çalışırsanız, 'System Locked' ekranını göreceksiniz.",
+                "reinstall": {
+                    "title": "Yeniden Kurulum için:",
+                    "1": "<code>www/config/</code> klasörüne gidin",
+                    "2": "<code>.installed</code> dosyasını silin"
                 }
             }
         },

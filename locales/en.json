@@ -463,11 +463,12 @@
                 "desc": "Review settings and click Install. You will receive a <strong>License Key</strong>."
             },
             "step6": {
-                "title": "Step 6: Security Cleanup",
-                "desc": "To prevent re-installation, you must archive the installer.",
-                "steps": {
-                    "1": "Type 'UNINSTALL'.",
-                    "2": "Click 'Archive Files'."
+                "title": "Step 6: Security Lock",
+                "desc": "After installation, the system locks automatically to prevent unauthorized access. If you try to access the installer again, you will see the 'System Locked' screen.",
+                "reinstall": {
+                    "title": "To Reinstall:",
+                    "1": "Navigate to <code>www/config/</code>",
+                    "2": "Delete the <code>.installed</code> file"
                 }
             }
         },
