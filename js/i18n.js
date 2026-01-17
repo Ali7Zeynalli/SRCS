@@ -20,13 +20,9 @@ class I18n {
         if (stored && AVAILABLE_LANGUAGES.includes(stored)) {
             return stored;
         }
-        
-        const browser = navigator.language.slice(0, 2);
-        if (AVAILABLE_LANGUAGES.includes(browser)) {
-            return browser;
-        }
 
-        return DEFAULT_LANGUAGE;
+        // User requested default to be English always on first visit, ignoring browser locale
+        return DEFAULT_LANGUAGE; 
     }
 
     async setLanguage(lang) {
