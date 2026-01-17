@@ -11,7 +11,6 @@
             <a href="support.html" data-i18n="navbar.support">Support</a>
         </div>
         <div style="display: flex; gap: 10px; align-items: center;">
-            <!-- Language Switcher -->
             <div class="lang-dropdown">
                 <button class="lang-btn" aria-label="Select Language">
                     <i class="fa-solid fa-globe"></i>
@@ -26,12 +25,29 @@
                 </div>
             </div>
 
-            <a href="https://github.com/Ali7Zeynalli/SRC" target="_blank" class="btn btn-outline" title="View Project on GitHub">
+            <a href="https://github.com/Ali7Zeynalli/SRC" target="_blank" class="btn btn-outline desktop-only" title="View Project on GitHub">
                 <i class="fa-brands fa-github"></i> <span data-i18n="navbar.github">GitHub</span>
             </a>
-            <a href="https://github.com/Ali7Zeynalli/SRC/archive/refs/heads/main.zip" class="btn btn-primary">
+            <a href="https://github.com/Ali7Zeynalli/SRC/archive/refs/heads/main.zip" class="btn btn-primary desktop-only">
                 <i class="fa-solid fa-download"></i> <span data-i18n="navbar.download">Download</span>
             </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="hamburger" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <a href="index.html" data-i18n="navbar.home">Home</a>
+        <a href="features.html" data-i18n="navbar.features">Features</a>
+        <a href="docs.html" data-i18n="navbar.docs">Docs</a>
+        <a href="changelog.html" data-i18n="navbar.changelog">Changelog</a>
+        <a href="support.html" data-i18n="navbar.support">Support</a>
+        <hr style="border-color: rgba(255,255,255,0.1); margin: 10px 0;">
+        <a href="https://github.com/Ali7Zeynalli/SRC" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://github.com/Ali7Zeynalli/SRC/archive/refs/heads/main.zip"><i class="fa-solid fa-download"></i> Download</a>
     </div>
 </nav>

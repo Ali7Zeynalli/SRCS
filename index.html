@@ -136,7 +136,11 @@
                             img.src = file.download_url;
                             img.alt = file.name;
                             img.title = file.name;
-                            img.style = "height: 400px; border-radius: 12px; border: var(--border); scroll-snap-align: center; cursor: pointer; transition: 0.3s;";
+                            img.src = file.download_url;
+                            img.alt = file.name;
+                            img.title = file.name;
+                            img.className = "gallery-img"; // Use CSS class for responsiveness
+
                             
                             // Simple hover effect
                             img.onmouseover = () => { img.style.transform = 'scale(1.02)'; };

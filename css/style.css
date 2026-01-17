@@ -419,9 +419,76 @@ footer::before {
 }
 
 /* Mobile Responsive */
+/* Mobile Responsive */
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
-    .nav-links { display: none; } /* Simplified for now */
+    .nav-links { display: none; }
+    .desktop-only { display: none !important; } /* Hide desktop buttons */
+    
+    .hamburger { 
+        display: block !important; 
+        background: none; 
+        border: none; 
+        color: white; 
+        font-size: 1.5rem; 
+        cursor: pointer; 
+        margin-left: 10px;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 70px; /* Below navbar */
+        left: 0;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.98);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        border-bottom: 1px solid var(--border);
+        display: none; /* Hidden by default */
+        animation: slideDown 0.3s ease-out;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr); /* 2 Columns to reduce height */
+        text-align: left; 
+        gap: 30px; 
+    }
+
+    /* Logo section spans full width */
+    .footer-content > div:first-child {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    /* Center logo image specifically */
+    .footer-content > div:first-child h4 {
+        justify-content: center;
+    }
+
+    /* Connect section (last child) spans full width and centers */
+    .footer-content > div:last-child {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    .mobile-menu a {
+        font-size: 1.1rem;
+        padding: 10px;
+        color: var(--text-primary);
+        border-radius: 8px;
+    }
+
+    .mobile-menu a:hover {
+        background: rgba(14, 165, 233, 0.1);
+        color: var(--primary);
+    }
+
     .hero-stats { flex-direction: column; gap: 20px; }
     
     /* Feature Rows Responsive */
@@ -434,13 +501,21 @@ footer::before {
         min-width: 100% !important;
         width: 100%;
     }
-    
-    .feature-number {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
+
+    /* Prevent grid blowout on small screens */
+    .features-grid {
+        grid-template-columns: 1fr;
     }
 }
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Default state for hamburger */
+.hamburger { display: none; }
+.mobile-menu { display: none; }
 
 /* Documentation Layout */
 .docs-layout {
@@ -536,6 +611,34 @@ footer::before {
     justify-content: center;
     gap: 40px;
     padding: 20px;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Dynamic Gallery Styles */
+.gallery-img {
+    height: 400px;
+    width: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    scroll-snap-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    flex-shrink: 0; /* Prevent squishing */
+}
+
+.gallery-img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .gallery-img {
+        height: auto; /* Allow height to adjust */
+        width: 85vw;  /* fit mostly on screen with peek */
+        max-height: 300px; /* specific cap for mobile */
+        object-fit: cover;
+        object-position: top;
+    }
 }
 
 .lightbox-image-container {
@@ -563,6 +666,28 @@ footer::before {
     border: 1px solid rgba(148, 163, 184, 0.1);
     max-height: 100%;
     overflow-y: auto;
+}
+
+/* Comparison Table Sticky First Column */
+@media (max-width: 768px) {
+    table {
+        /* Ensure table layout is fixed to support sticky better if needed, 
+           or keep auto but fix cells */
+    }
+    
+    th:first-child, td:first-child {
+        position: sticky;
+        left: 0;
+        z-index: 10;
+        background: var(--bg-card); /* Match table bg */
+        border-right: 1px solid var(--border);
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Shadow to show depth */
+    }
+
+    th:first-child {
+        z-index: 20; /* Header stays on top of body cells */
+        background: rgba(30, 41, 59, 0.95); /* Slightly darker/frosted for header */
+    }
 }
 
 .lightbox-text h2 {

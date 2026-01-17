@@ -208,9 +208,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         
-        // Re-initialize Navbar Scroll Effect (after insertion)
+        
+        // Re-initialize Navbar Scroll and Mobile Menu
         const navbar = document.querySelector('.navbar');
         if(navbar) {
+            // Scroll Effect
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 50) {
                     navbar.style.background = 'rgba(15, 23, 42, 0.9)';
@@ -220,6 +222,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     navbar.style.boxShadow = 'none';
                 }
             });
+
+            // Mobile Menu Logic
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            if (hamburger && mobileMenu) {
+                hamburger.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                    const icon = hamburger.querySelector('i');
+                    if (mobileMenu.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-xmark');
+                    } else {
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
         }
     };
     
