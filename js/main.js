@@ -245,6 +245,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // Render Components Immediate
     renderSharedComponents();
 
+    // --- Documentation Mobile Menu Logic ---
+    const docsToggle = document.querySelector('.docs-menu-toggle');
+    const docsSidebar = document.querySelector('.docs-sidebar');
+    
+    if (docsToggle && docsSidebar) {
+        docsToggle.addEventListener('click', () => {
+            docsSidebar.classList.toggle('active');
+            // Change icon if needed? currently simple toggle
+        });
+
+        // Close sidebar when a link is clicked
+        const docsLinks = docsSidebar.querySelectorAll('a');
+        docsLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                docsSidebar.classList.remove('active');
+            });
+        });
+    }
+
     // --- Documentation SPA Logic ---
     if (window.location.pathname.includes('docs.html')) {
         const sections = document.querySelectorAll('.doc-section');

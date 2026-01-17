@@ -579,6 +579,78 @@ footer::before {
 .docs-content pre code { background: none; padding: 0; color: #d4d4d4; }
 
 /* Responsive Docs */
+@media (max-width: 900px) {
+    .docs-layout {
+        flex-direction: column;
+    }
+
+    /* Off-Canvas Sidebar */
+    .docs-sidebar {
+        position: fixed;
+        top: 70px; /* Below navbar */
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--bg-dark);
+        z-index: 999;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        border-right: none;
+        padding-bottom: 50px; /* Space for footer/scroll */
+    }
+
+    .docs-sidebar.active {
+        transform: translateX(0);
+        box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    }
+
+    .docs-sidebar h4 {
+        color: white;
+        padding-left: 10px;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 10px;
+    }
+
+    .docs-sidebar ul li a {
+        padding: 15px; /* Larger touch targets */
+        font-size: 1.1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .docs-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .docs-menu-toggle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 15px;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        color: var(--primary);
+        font-weight: 600;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .docs-footer-container footer {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 901px) {
+    .docs-menu-toggle {
+        display: none;
+    }
+}
+
 /* Lightbox */
 .lightbox-overlay {
     position: fixed;
@@ -670,11 +742,6 @@ footer::before {
 
 /* Comparison Table Sticky First Column */
 @media (max-width: 768px) {
-    table {
-        /* Ensure table layout is fixed to support sticky better if needed, 
-           or keep auto but fix cells */
-    }
-    
     th:first-child, td:first-child {
         position: sticky;
         left: 0;
