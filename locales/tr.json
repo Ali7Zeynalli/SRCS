@@ -18,12 +18,16 @@
         "github": "Bizi GitHub'da Yıldızlayın"
     },
     "stats": {
-        "deployment_time": "< 2 dk",
+        "deployment_time": "< 5 dk",
         "deployment_label": "Kurulum Süresi",
         "clicks_value": "3 Tıklama",
         "clicks_label": "Herhangi Bir İşlem",
         "security_value": "%100",
-        "security_label": "Yerinde Güvenlik"
+        "security_label": "On-Premise Güvenlik",
+        "modules_value": "10+",
+        "modules_label": "Modül",
+        "languages_value": "5",
+        "languages_label": "Dil Desteği"
     },
     "mission": {
         "title": "Neden S-RCS?",

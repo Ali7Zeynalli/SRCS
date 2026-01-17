@@ -18,12 +18,16 @@
         "github": "Поставить звезду"
     },
     "stats": {
-        "deployment_time": "< 2 мин",
+        "deployment_time": "< 5 мин",
         "deployment_label": "Время развертывания",
         "clicks_value": "3 Клика",
         "clicks_label": "Любая операция",
         "security_value": "100%",
-        "security_label": "Локальная безопасность"
+        "security_label": "On-Premise Безопасность",
+        "modules_value": "10+",
+        "modules_label": "Модулей",
+        "languages_value": "5",
+        "languages_label": "Языков"
     },
     "mission": {
         "title": "Почему S-RCS?",

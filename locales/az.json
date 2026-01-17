@@ -18,12 +18,16 @@
         "github": "GitHub-da Ulduz verin"
     },
     "stats": {
-        "deployment_time": "< 2 dəq",
+        "deployment_time": "< 5 dəq",
         "deployment_label": "Quraşdırma Vaxtı",
         "clicks_value": "3 Klik",
         "clicks_label": "Hər hansı Əməliyyat",
         "security_value": "100%",
-        "security_label": "On-Premise Təhlükəsizlik"
+        "security_label": "On-Premise Təhlükəsizlik",
+        "modules_value": "10+",
+        "modules_label": "Modul",
+        "languages_value": "5",
+        "languages_label": "Dil Dəstəyi"
     },
     "mission": {
         "title": "Niyə S-RCS?",

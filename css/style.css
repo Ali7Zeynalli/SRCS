@@ -213,6 +213,7 @@ a { text-decoration: none; color: inherit; transition: 0.3s; }
     justify-content: center;
     gap: 40px;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .stat-item h3 {

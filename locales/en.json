@@ -18,12 +18,16 @@
         "github": "Star us on GitHub"
     },
     "stats": {
-        "deployment_time": "< 2 min",
+        "deployment_time": "< 5 min",
         "deployment_label": "Deployment Time",
         "clicks_value": "3 Clicks",
         "clicks_label": "Any Operation",
         "security_value": "100%",
-        "security_label": "On-Premise Security"
+        "security_label": "On-Premise Security",
+        "modules_value": "10+",
+        "modules_label": "Modules",
+        "languages_value": "5",
+        "languages_label": "Languages"
     },
     "mission": {
         "title": "Why S-RCS?",
