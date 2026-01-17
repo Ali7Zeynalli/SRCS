@@ -9,6 +9,10 @@ class I18n {
     constructor() {
         this.language = this.getPreferredLanguage();
         this.data = {};
+        // Delay observer setup until DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+             this.setupObserver();
+        });
     }
 
     getPreferredLanguage() {
@@ -42,6 +46,45 @@ class I18n {
         window.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: lang } }));
     }
 
+    setupObserver() {
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                mutation.addedNodes.forEach((node) => {
+                    if (node.nodeType === 1) { // Element node
+                        // Check the node itself
+                        if (node.hasAttribute('data-i18n')) {
+                            this.translateElement(node);
+                        }
+                        // Check children
+                        node.querySelectorAll('[data-i18n]').forEach((child) => {
+                            this.translateElement(child);
+                        });
+                    }
+                });
+            });
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    }
+
+    translateElement(element) {
+        const key = element.getAttribute('data-i18n');
+        const translation = this.getValue(key);
+        
+        if (translation !== null && translation !== undefined) {
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = translation;
+            } else if (element.tagName === 'IMG') {
+               element.alt = translation;
+            } else {
+                element.innerHTML = translation; // Allow HTML in translations
+            }
+        }
+    }
+
     async loadLocale(lang) {
         try {
             const response = await fetch(`locales/${lang}.json`);
@@ -54,18 +97,7 @@ class I18n {
 
     translatePage() {
         document.querySelectorAll('[data-i18n]').forEach(element => {
-            const key = element.getAttribute('data-i18n');
-            const translation = this.getValue(key);
-            
-            if (translation !== null && translation !== undefined) {
-                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                    element.placeholder = translation;
-                } else if (element.tagName === 'IMG') {
-                   element.alt = translation;
-                } else {
-                    element.innerHTML = translation; // Allow HTML in translations
-                }
-            }
+            this.translateElement(element);
         });
     }
 
