@@ -907,6 +907,22 @@ aside.docs-sidebar li a.active {
 .lang-menu a:hover { background: rgba(59, 130, 246, 0.2); color: white; }
 
 /* Fix Helper for Dropdowns - Override global container hidden overflow */
-.navbar .nav-container, .navbar .container {
+.navbar, .navbar .nav-container, .navbar .container {
     overflow: visible !important;
+}
+
+.lang-menu {
+    z-index: 2000 !important; /* Ensure it's above everything */
+    margin-top: 5px; /* Slight gap */
+}
+
+/* Hover bridge to prevent closing clearly */
+.lang-dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 10px; /* Bridge gap */
+    background: transparent;
 }
