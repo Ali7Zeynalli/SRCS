@@ -57,7 +57,7 @@ class I18n {
             const key = element.getAttribute('data-i18n');
             const translation = this.getValue(key);
             
-            if (translation) {
+            if (translation !== null && translation !== undefined) {
                 if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                     element.placeholder = translation;
                 } else if (element.tagName === 'IMG') {

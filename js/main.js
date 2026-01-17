@@ -200,6 +200,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const html = await response.text();
                 footerPlaceholder.innerHTML = html;
                 setActiveLink(); // Call again for footer links
+                
+                // Trigger translation for the newly added footer
+                if (window.i18n) window.i18n.translatePage();
             } catch (error) {
                 console.error('Error loading footer:', error);
             }

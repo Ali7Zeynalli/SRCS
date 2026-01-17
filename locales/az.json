@@ -318,25 +318,238 @@
             "title": "Sənədləşdirmə Mərkəzi",
             "welcome": "S-RCS sənədlərinə xoş gəlmisiniz. S-RCS, idarəetməni ənənəvi vasitələrdən sadələşdirilmiş veb platformaya keçirərək Windows Active Directory idarəçiliyində inqilab etmək üçün hazırlanmış hərtərəfli bir portalıdır.",
             "version": "Cari Versiya:",
-            "note": "Qeyd: Bu sənədlər aktiv şəkildə zənginləşdirilir. Daha əhatəli bir bələdçi təmin etmək üçün bölmələr mütəmadi olaraq əlavə olunur və genişləndirilir."
+            "note": "Qeyd: Bu sənədlər aktiv şəkildə zənginləşdirilir. Daha əhatəli bir bələdçi təmin etmək üçün bölmələr mütəmadi olaraq əlavə olunur və genişləndirilir.",
+            "arch": {
+                "title": "Sistem Arxitekturası",
+                "server": "S-RCS Server (Docker)",
+                "stack": "[ PHP/Apache ] &nbsp; [ MySQL ] &nbsp; [ phpMyAdmin ]",
+                "conn": "⬇️ LDAPS (Port 636)",
+                "dc": "Windows Server (Domen Kontrolleri)",
+                "services": "[ Active Directory DS ] &nbsp; [ Sertifikat Xidmətləri ]"
+            }
         },
         "requirements": {
-            "title": "Sistem Tələbləri"
+            "title": "Sistem Tələbləri",
+            "server": {
+                "title": "S-RCS Server",
+                "os": "<strong>ƏS:</strong> Windows 10/11, Ubuntu 20.04+, macOS",
+                "ram": "<strong>RAM:</strong> Minimum 2GB (4GB Tövsiyə olunur)",
+                "disk": "<strong>Disk:</strong> 10GB Boş Yer",
+                "soft": "<strong>Proqram:</strong> Docker Desktop / Engine"
+            },
+            "ad": {
+                "title": "Active Directory",
+                "os": "<strong>ƏS:</strong> Windows Server 2016/2019/2022",
+                "roles": "<strong>Rolları:</strong> AD DS, AD Sertifikat Xidmətləri",
+                "network": "<strong>Şəbəkə:</strong> Port 636 (LDAPS) Açıq"
+            }
         },
         "installation": {
-            "title": "Layihəni Yüklə"
+            "title": "Layihəni Yüklə",
+            "desc": "İlk öncə layihə fayllarını kompüterinizə yükləyin.",
+            "step1": {
+                "title": "1. Layihənin Yüklənməsi",
+                "opt_a": "Seçim A: Git istifadə edərək (Tövsiyə olunur)",
+                "opt_b": "Seçim B: ZIP Yüklə",
+                "steps": {
+                    "1": "<a href='https://github.com/Ali7Zeynalli/S-RCS' target='_blank'>GitHub Səhifəsinə</a> gedin.",
+                    "2": "Yaşıl <strong>Code</strong> düyməsinə klikləyin.",
+                    "3": "<strong>Download ZIP</strong> seçin.",
+                    "4": "Qovluğa çıxarın."
+                }
+            },
+            "step2": {
+                "title": "2. Konfiqurasiya (.env)",
+                "desc": "<code>.env</code> faylını açın və verilənlər bazası məlumatlarını yeniləyin. <strong>Susmaya görə şifrələri mütləq dəyişməlisiniz!</strong>",
+                "alert": "<code>MYSQL_ROOT_PASSWORD</code> və <code>MYSQL_PASSWORD</code> dəyişdirin."
+            },
+            "step3": {
+                "title": "3. Konteynerləri Başladın"
+            }
         },
         "docker": {
-            "title": "Docker Quraşdırılması"
+            "title": "Docker Quraşdırılması",
+            "desc": "Əgər Docker quraşdırmamısınızsa, aşağıdakı təlimatları izləyin.",
+            "win": {
+                "title": "Windows 10/11",
+                "steps": {
+                    "1": "<a href='https://www.docker.com/products/docker-desktop' target='_blank' style='color: var(--primary);'>Docker Desktop</a> yükləyin.",
+                    "2": "Quraşdırın və kompüteri yenidən başladın.",
+                    "3": "Docker Desktop Tənzimləmələrini açın.",
+                    "4": "General &rarr; <strong>'Use the WSL 2 based engine'</strong> aktiv edin."
+                }
+            },
+            "linux": {
+                "title": "Ubuntu / Debian"
+            },
+            "win_server": {
+                "title": "Windows Server 2019/2022"
+            }
         },
         "ad_prep": {
-            "title": "Active Directory Hazırlığı"
+            "title": "Active Directory Hazırlığı",
+            "alert": "<strong>Kritik:</strong> S-RCS LDAPS (Port 636) istifadə edir. Şifrələnməmiş əlaqələr (Port 389) dəstəklənmir.",
+            "step1": {
+                "title": "Addım 1: Sertifikat Xidmətlərinin Quraşdırılması",
+                "desc": "Domen Kontrollerinizdə Server Manager vasitəsilə <strong>Active Directory Certificate Services</strong> rolunu quraşdırın. Bu alt rolları daxil edin:",
+                "role1": "Certification Authority",
+                "role2": "Certification Authority Web Enrollment"
+            },
+            "step2": {
+                "title": "Addım 2: CA Konfiqurasiyası",
+                "desc": "Quraşdırmadan sonra, xidməti konfiqurasiya etmək üçün Server Manager-də sarı bildiriş bayrağına klikləyin. Bu tənzimləmələrdən istifadə edin:",
+                "items": {
+                    "1": "<strong>Setup Type:</strong> Enterprise CA",
+                    "2": "<strong>CA Type:</strong> Root CA",
+                    "3": "<strong>Private Key:</strong> Create a new private key",
+                    "4": "<strong>Cryptography:</strong> Default (SHA256)",
+                    "5": "<strong>Validity:</strong> 5 Years"
+                }
+            },
+            "step3": {
+                "title": "Addım 3: Firewall Konfiqurasiyası",
+                "desc": "Port 636 üzərindən gələn trafikə icazə verməlisiniz. Aşağıdakı metodlardan birini istifadə edin:",
+                "method1": "Metod 1: PowerShell (Tövsiyə olunur)",
+                "method2": {
+                    "title": "Metod 2: Windows Firewall UI",
+                    "steps": {
+                        "1": "<strong>Windows Defender Firewall with Advanced Security</strong> (<code>wf.msc</code>) açın.",
+                        "2": "<strong>Inbound Rules</strong> &rarr; <strong>New Rule...</strong> seçin.",
+                        "3": "<strong>Rule Type:</strong> Port.",
+                        "4": "<strong>Protocol/Ports:</strong> TCP, Xüsusi yerli portlar: <code>636</code>.",
+                        "5": "<strong>Action:</strong> Allow the connection.",
+                        "6": "<strong>Name:</strong> <code>LDAPS (636)</code>."
+                    }
+                }
+            },
+            "step4": {
+                "title": "Addım 4: LDAPS Yoxlanışı",
+                "desc": "Portun dinlənildiyini yoxlamaq üçün DC-də bu əmri icra edin:"
+            }
         },
         "wizard": {
-            "title": "Quraşdırma Sehrbazı"
+            "title": "Quraşdırma Sehrbazı",
+            "desc": "Konteynerlər işə düşdükdən sonra <code>https://localhost:8043</code> (və ya server IP-niz) ünvanına keçin. Quraşdırıcı sizi 6 addımdan keçirəcək:",
+            "step1": {
+                "title": "Addım 1: Sistem Tələbləri",
+                "desc": "Sistem avtomatik olaraq lazımi genişlənmələri (LDAP, PDO, MySQL) və PHP versiyasını (7.4+) yoxlayır.",
+                "items": {
+                    "1": "PHP 7.4+",
+                    "2": "LDAP Genişlənməsi",
+                    "3": "OpenSSL"
+                }
+            },
+            "step2": {
+                "title": "Addım 2: Domen Konfiqurasiyası",
+                "desc": "Active Directory məlumatlarınızı daxil edin.",
+                "table": {
+                    "ip": "Domen Kontroller IP",
+                    "port": "LDAPS Port",
+                    "group": "Admin Qrupu",
+                    "port_val": "636 (Tələb olunur)",
+                    "group_val": "İlk giriş icazəsi olan qrup (məs. Domain Admins)"
+                }
+            },
+            "step3": {
+                "title": "Addım 3: Verilənlər Bazası",
+                "desc": "Verilənlər bazası tənzimləmələrinin `.env` faylından oxunan görüntüsü."
+            },
+            "step4": {
+                "title": "Addım 4 & 5: Quraşdırma",
+                "desc": "Tənzimləmələri yoxlayın və Quraşdır klikləyin. Sizə <strong>Lisenziya Açarı</strong> veriləcək."
+            },
+            "step6": {
+                "title": "Addım 6: Təhlükəsizlik Təmizliyi",
+                "desc": "Yenidən quraşdırmanın qarşısını almaq üçün quraşdırıcını arxivləməlisiniz.",
+                "steps": {
+                    "1": "'UNINSTALL' yazın.",
+                    "2": "'Arxivlə' düyməsini klikləyin."
+                }
+            }
         },
         "post_install": {
-            "title": "Quraşdırmadan Sonra"
+            "title": "Quraşdırmadan Sonra",
+            "alert": "Təbriklər! S-RCS hazırdır.",
+            "access": {
+                "title": "Giriş İcazəsi Verilməsi",
+                "desc": "İlkin olaraq yalnız <strong>Admin Qrupu</strong> (Addım 2) giriş edə bilər. Daha çox qrup (məs. 'Helpdesk') əlavə etmək üçün:",
+                "steps": {
+                    "1": "Admin kimi daxil olun.",
+                    "2": "<strong>Sistem Tənzimləmələri</strong> &rarr; <strong>Active Directory</strong> bölməsinə keçin.",
+                    "3": "Qrupları <strong>İcazəli Qruplar</strong>a əlavə edin."
+                }
+            }
+        },
+        "user_manual": {
+            "dashboard": {
+                "title": "İdarə Paneli və Giriş",
+                "desc": "İnteraktiv idarə paneli AD mühitinizi bir baxışda izləməyə imkan verir.",
+                "img1": "Giriş Ekranı",
+                "img2": "İdarə Paneli"
+            },
+            "users": {
+                "title": "İstifadəçi İdarəetməsi",
+                "desc": "İstifadəçiləri rahatlıqla idarə edin: Şifrələri sıfırlayın, hesabları kiliddən çıxarın, aktiv/deaktiv edin və istifadəçiləri silin."
+            },
+            "ous": {
+                "title": "OU İdarəetməsi",
+                "desc": "Təşkilat Vahidlərini Ağac və ya Cədvəl görünüşündə araşdırın."
+            },
+            "groups": {
+                "title": "Qrup İdarəetməsi",
+                "desc": "Təhlükəsizlik və Paylama qrupları yaradın və idarə edin. Kütləvi üzv əlavə etmək xüsusiyyəti mövcuddur."
+            },
+            "computers": {
+                "title": "Kompüterlər və GPO-lar",
+                "desc": "Kompüter obyektlərinə və GPO detallarına baxın."
+            },
+            "tasks": {
+                "title": "Tapşırıq İdarəetməsi",
+                "desc": "IT sorğularını izləmək üçün daxili Helpdesk sistemi."
+            },
+            "reporting": {
+                "title": "Hesabatlıq",
+                "desc": "Audit üçün məlumatları CSV/Excel formatında ixrac edin."
+            },
+            "logs": {
+                "title": "Audit Logları",
+                "desc": "Portal daxilində bütün administrator fəaliyyətlərini izləyin."
+            }
+        },
+        "troubleshooting": {
+            "title": "Nasazlıqların Aradan Qaldırılması",
+            "ldap": {
+                "title": "LDAP Xətası: 'Can't contact LDAP server'",
+                "items": {
+                    "1": "DC-də Port 636-nın açıq olduğundan əmin olun (Firewall).",
+                    "2": "Sertifikat Xidmətlərinin quraşdırıldığını yoxlayın (Root CA).",
+                    "3": "Düzgün IP/Host adı istifadə etdiyinizi yoxlayın."
+                }
+            },
+            "mysql": {
+                "title": "MySQL Xətası: 'Data directory unusable'",
+                "desc": "Əgər verilənlər bazası başlaya bilmirsə, həcmi (volume) təmizləyin və yenidən başladın:"
+            },
+            "logs": {
+                "title": "Konteyner Logları"
+            },
+            "ports": {
+                "title": "Port Münaqişələri",
+                "steps": {
+                    "1": "<code>.env</code> faylında <code>HTTP_PORT</code> və ya <code>HTTPS_PORT</code> dəyişin.",
+                    "2": "Konteynerləri yenidən başladın: <code>docker-compose up -d</code>"
+                }
+            }
+        },
+        "remote": {
+            "title": "Uzaqdan Çıxış",
+            "desc": "Statik IP olmadan hər yerdən S-RCS-ə təhlükəsiz daxil olmaq üçün <a href='https://github.com/Ali7Zeynalli/NovusGate' target='_blank' style='color: var(--primary);'>NovusGate VPN</a> istifadə edin."
+        },
+        "support": {
+            "title": "Korporativ Dəstək",
+            "desc": "Biz quraşdırma, təlim və fərdiləşdirmə üçün ödənişli dəstək xidmətləri təklif edirik.",
+            "contact": "Bizimlə Əlaqə",
+            "linkedin": "LinkedIn Profili"
         }
     }
 }

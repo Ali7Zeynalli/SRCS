@@ -318,25 +318,238 @@
             "title": "Dokumentationszentrum",
             "welcome": "Willkommen bei der S-RCS-Dokumentation. S-RCS ist ein umfassendes Webportal, das entwickelt wurde, um das Windows Active Directory-Management zu revolutionieren.",
             "version": "Aktuelle Version:",
-            "note": "Hinweis: Diese Dokumentation wird aktiv erweitert."
+            "note": "Hinweis: Diese Dokumentation wird aktiv erweitert.",
+            "arch": {
+                "title": "Systemarchitektur",
+                "server": "S-RCS Server (Docker)",
+                "stack": "[ PHP/Apache ] &nbsp; [ MySQL ] &nbsp; [ phpMyAdmin ]",
+                "conn": "⬇️ LDAPS (Port 636)",
+                "dc": "Windows Server (Domain Controller)",
+                "services": "[ Active Directory DS ] &nbsp; [ Zertifikatsdienste ]"
+            }
         },
         "requirements": {
-            "title": "Systemanforderungen"
+            "title": "Systemanforderungen",
+            "server": {
+                "title": "S-RCS Server",
+                "os": "<strong>OS:</strong> Windows 10/11, Ubuntu 20.04+, macOS",
+                "ram": "<strong>RAM:</strong> Minimum 2GB (4GB Empfohlen)",
+                "disk": "<strong>Festplatte:</strong> 10GB freien Speicherplatz",
+                "soft": "<strong>Software:</strong> Docker Desktop / Engine"
+            },
+            "ad": {
+                "title": "Active Directory",
+                "os": "<strong>OS:</strong> Windows Server 2016/2019/2022",
+                "roles": "<strong>Rollen:</strong> AD DS, AD Zertifikatsdienste",
+                "network": "<strong>Netzwerk:</strong> Port 636 (LDAPS) offen"
+            }
         },
         "installation": {
-            "title": "Projekt Herunterladen"
+            "title": "Projekt Herunterladen",
+            "desc": "Laden Sie zuerst die Projektdateien auf Ihren Rechner.",
+            "step1": {
+                "title": "1. Projekt herunterladen",
+                "opt_a": "Option A: Mit Git (Empfohlen)",
+                "opt_b": "Option B: ZIP herunterladen",
+                "steps": {
+                    "1": "Gehen Sie zur <a href='https://github.com/Ali7Zeynalli/S-RCS' target='_blank'>GitHub-Seite</a>.",
+                    "2": "Klicken Sie auf den grünen <strong>Code</strong> Button.",
+                    "3": "Wählen Sie <strong>Download ZIP</strong>.",
+                    "4": "Entpacken Sie es in einen Ordner."
+                }
+            },
+            "step2": {
+                "title": "2. Konfiguration (.env)",
+                "desc": "Öffnen Sie die <code>.env</code> Datei und aktualisieren Sie die Datenbankzugangsdaten. <strong>Sie müssen die Standardpasswörter ändern!</strong>",
+                "alert": "Ändern Sie <code>MYSQL_ROOT_PASSWORD</code> und <code>MYSQL_PASSWORD</code>."
+            },
+            "step3": {
+                "title": "3. Container starten"
+            }
         },
         "docker": {
-            "title": "Docker Installation"
+            "title": "Docker Installation",
+            "desc": "Wenn Sie Docker noch nicht installiert haben, folgen Sie den Anweisungen für Ihr Betriebssystem unten.",
+            "win": {
+                "title": "Windows 10/11",
+                "steps": {
+                    "1": "Laden Sie <a href='https://www.docker.com/products/docker-desktop' target='_blank' style='color: var(--primary);'>Docker Desktop</a> herunter.",
+                    "2": "Installieren und starten Sie Ihren Computer neu.",
+                    "3": "Öffnen Sie die Docker Desktop Einstellungen.",
+                    "4": "Allgemein &rarr; Aktivieren Sie <strong>'Use the WSL 2 based engine'</strong>."
+                }
+            },
+            "linux": {
+                "title": "Ubuntu / Debian"
+            },
+            "win_server": {
+                "title": "Windows Server 2019/2022"
+            }
         },
         "ad_prep": {
-            "title": "Active Directory Vorbereitung"
+            "title": "Active Directory Vorbereitung",
+            "alert": "<strong>Kritisch:</strong> S-RCS verwendet LDAPS (Port 636). Unverschlüsselte Verbindungen (Port 389) werden NICHT unterstützt.",
+            "step1": {
+                "title": "Schritt 1: Zertifikatsdienste installieren",
+                "desc": "Installieren Sie auf Ihrem Domain Controller die Rolle <strong>Active Directory Certificate Services</strong> über den Server-Manager. Fügen Sie diese Unterrollen hinzu:",
+                "role1": "Zertifizierungsstelle",
+                "role2": "Zertifizierungsstellen-Webregistrierung"
+            },
+            "step2": {
+                "title": "Schritt 2: CA-Konfiguration",
+                "desc": "Klicken Sie nach der Installation auf die gelbe Benachrichtigungsflagge im Server-Manager, um den Dienst zu konfigurieren. Verwenden Sie diese Einstellungen:",
+                "items": {
+                    "1": "<strong>Einrichtungstyp:</strong> Unternehmens-CA",
+                    "2": "<strong>CA-Typ:</strong> Stamm-CA",
+                    "3": "<strong>Privater Schlüssel:</strong> Neuen privaten Schlüssel erstellen",
+                    "4": "<strong>Kryptographie:</strong> Standard (SHA256)",
+                    "5": "<strong>Gültigkeit:</strong> 5 Jahre"
+                }
+            },
+            "step3": {
+                "title": "Schritt 3: Firewall-Konfiguration",
+                "desc": "Sie müssen eingehenden Verkehr auf Port 636 zulassen. Verwenden Sie eine der folgenden Methoden:",
+                "method1": "Methode 1: PowerShell (Empfohlen)",
+                "method2": {
+                    "title": "Methode 2: Windows-Firewall-Oberfläche",
+                    "steps": {
+                        "1": "Öffnen Sie <strong>Windows Defender Firewall mit erweiterter Sicherheit</strong> (<code>wf.msc</code>).",
+                        "2": "Wählen Sie <strong>Eingehende Regeln</strong> &rarr; <strong>Neue Regel...</strong>",
+                        "3": "<strong>Regeltyp:</strong> Port.",
+                        "4": "<strong>Protokolle und Ports:</strong> TCP, Bestimmte lokale Ports: <code>636</code>.",
+                        "5": "<strong>Aktion:</strong> Verbindung zulassen.",
+                        "6": "<strong>Name:</strong> <code>LDAPS (636)</code>."
+                    }
+                }
+            },
+            "step4": {
+                "title": "Schritt 4: LDAPS überprüfen",
+                "desc": "Führen Sie diesen Befehl auf Ihrem DC aus, um zu überprüfen, ob der Port lauscht:"
+            }
         },
         "wizard": {
-            "title": "Setup-Assistent"
+            "title": "Setup-Assistent",
+            "desc": "Sobald Ihre Container laufen, navigieren Sie zu <code>https://localhost:8043</code> (oder Ihrer Server-IP). Der Installer führt Sie durch 6 Schritte:",
+            "step1": {
+                "title": "Schritt 1: Systemanforderungen",
+                "desc": "Das System prüft automatisch auf erforderliche Erweiterungen (LDAP, PDO, MySQL) und PHP-Version (7.4+).",
+                "items": {
+                    "1": "PHP 7.4+",
+                    "2": "LDAP-Erweiterung",
+                    "3": "OpenSSL"
+                }
+            },
+            "step2": {
+                "title": "Schritt 2: Domänenkonfiguration",
+                "desc": "Geben Sie Ihre Active Directory-Details ein.",
+                "table": {
+                    "ip": "Domain Controller IP",
+                    "port": "LDAPS Port",
+                    "group": "Admin-Gruppe",
+                    "port_val": "636 (Erforderlich)",
+                    "group_val": "Gruppe mit Anmeldeberechtigung (z.B. Domain Admins)"
+                }
+            },
+            "step3": {
+                "title": "Schritt 3: Datenbank",
+                "desc": "Nur-Lese-Ansicht der Datenbankeinstellungen, geladen aus `.env`."
+            },
+            "step4": {
+                "title": "Schritt 4 & 5: Installieren",
+                "desc": "Überprüfen Sie die Einstellungen und klicken Sie auf Installieren. Sie erhalten einen <strong>Lizenzschlüssel</strong>."
+            },
+            "step6": {
+                "title": "Schritt 6: Sicherheitsbereinigung",
+                "desc": "Um eine Neuinstallation zu verhindern, müssen Sie den Installer archivieren.",
+                "steps": {
+                    "1": "Geben Sie 'UNINSTALL' ein.",
+                    "2": "Klicken Sie auf 'Dateien archivieren'."
+                }
+            }
         },
         "post_install": {
-            "title": "Nach der Installation"
+            "title": "Nach der Installation",
+            "alert": "Glückwunsch! S-RCS ist bereit.",
+            "access": {
+                "title": "Zugriff gewähren",
+                "desc": "Anfangs kann sich nur die <strong>Admin-Gruppe</strong> (Schritt 2) anmelden. Um weitere Gruppen hinzuzufügen (z.B. 'Helpdesk'):",
+                "steps": {
+                    "1": "Melden Sie sich als Admin an.",
+                    "2": "Gehen Sie zu <strong>Systemeinstellungen</strong> &rarr; <strong>Active Directory</strong>.",
+                    "3": "Fügen Sie Gruppen zu <strong>Erlaubte Gruppen</strong> hinzu."
+                }
+            }
+        },
+        "user_manual": {
+            "dashboard": {
+                "title": "Dashboard & Login",
+                "desc": "Das interaktive Dashboard ermöglicht Ihnen die Überwachung Ihrer AD-Umgebung auf einen Blick.",
+                "img1": "Anmeldebildschirm",
+                "img2": "Dashboard"
+            },
+            "users": {
+                "title": "Benutzerverwaltung",
+                "desc": "Verwalten Sie Benutzer mit Leichtigkeit: Passwörter zurücksetzen, Konten entsperren, deaktivieren/aktivieren und löschen."
+            },
+            "ous": {
+                "title": "OU-Verwaltung",
+                "desc": "Erkunden Sie Ihre Organisationseinheiten in Baumansicht oder Tabellenansicht."
+            },
+            "groups": {
+                "title": "Gruppenverwaltung",
+                "desc": "Erstellen und verwalten Sie Sicherheits- und Verteilergruppen. Massenhinzufügung von Mitgliedern verfügbar."
+            },
+            "computers": {
+                "title": "Computer & GPOs",
+                "desc": "Anzeigen von Computerobjekten und GPO-Details."
+            },
+            "tasks": {
+                "title": "Aufgabenverwaltung",
+                "desc": "Internes Helpdesk-System zur Verfolgung von IT-Anfragen."
+            },
+            "reporting": {
+                "title": "Berichtswesen",
+                "desc": "Daten als CSV/Excel für Audits exportieren."
+            },
+            "logs": {
+                "title": "Audit-Protokolle",
+                "desc": "Verfolgen Sie alle Administratoraktionen innerhalb des Portals."
+            }
+        },
+        "troubleshooting": {
+            "title": "Fehlerbehebung",
+            "ldap": {
+                "title": "LDAP-Fehler: 'Can't contact LDAP server'",
+                "items": {
+                    "1": "Stellen Sie sicher, dass Port 636 auf dem DC offen ist (Firewall).",
+                    "2": "Überprüfen Sie, ob Zertifikatsdienste installiert sind (Root CA).",
+                    "3": "Überprüfen Sie, ob Sie die richtige IP/Hostname verwenden."
+                }
+            },
+            "mysql": {
+                "title": "MySQL-Fehler: 'Data directory unusable'",
+                "desc": "Wenn die Datenbank nicht initialisiert werden kann, löschen Sie das Volume und starten Sie neu:"
+            },
+            "logs": {
+                "title": "Container-Logs"
+            },
+            "ports": {
+                "title": "Port-Konflikte",
+                "steps": {
+                    "1": "Ändern Sie <code>HTTP_PORT</code> oder <code>HTTPS_PORT</code> in der <code>.env</code> Datei.",
+                    "2": "Starten Sie die Container neu: <code>docker-compose up -d</code>"
+                }
+            }
+        },
+        "remote": {
+            "title": "Fernzugriff",
+            "desc": "Verwenden Sie <a href='https://github.com/Ali7Zeynalli/NovusGate' target='_blank' style='color: var(--primary);'>NovusGate VPN</a>, um sicher von überall ohne statische IPs auf S-RCS zuzugreifen."
+        },
+        "support": {
+            "title": "Unternehmenssupport",
+            "desc": "Wir bieten kostenpflichtige Support-Services für Installation, Schulung und Anpassung.",
+            "contact": "Kontaktieren Sie uns",
+            "linkedin": "LinkedIn Profil"
         }
     }
 }
