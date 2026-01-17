@@ -18,9 +18,30 @@
         "github": "Bizi GitHub'da Yıldızlayın"
     },
     "stats": {
-        "efficiency": "Verimlilik Artışı",
-        "setup": "Kurulum Süresi",
-        "platform": "Platform"
+        "deployment_time": "< 2 dk",
+        "deployment_label": "Kurulum Süresi",
+        "clicks_value": "3 Tıklama",
+        "clicks_label": "Herhangi Bir İşlem",
+        "security_value": "%100",
+        "security_label": "Yerinde Güvenlik"
+    },
+    "mission": {
+        "title": "Neden S-RCS?",
+        "desc": "Geleneksel AD yönetimi yavaş, karmaşık ve hataya açıktır. S-RCS, güvenliği feda etmeden yönetimi modern bir web arayüzüne basitleştirir.",
+        "features": {
+            "time": {
+                "title": "Zaman Kazanın",
+                "desc": "Akıcı iş akışları sonsuz gezinmenin yerini alır. Karmaşık görevleri saniyeler içinde gerçekleştirin."
+            },
+            "security": {
+                "title": "Tasarım Gereği Güvenli",
+                "desc": "Port 636'da LDAPS (SSL) kullanır. Şifreler düz metin olarak saklanmaz. Tam denetim kaydı."
+            },
+            "access": {
+                "title": "Her Yerden Erişim",
+                "desc": "Web tabanlı portal. Sunucunuzu herhangi bir cihazdan yönetin. <a href='https://github.com/Ali7Zeynalli/NovusGate' target='_blank' style='color: var(--primary);'>NovusGate VPN</a>'i destekler."
+            }
+        }
     },
     "footer": {
         "tagline": "Sunucu Raporlama ve Kontrol Sistemi.\nAD yönetiminin geleceği.",
@@ -59,7 +80,7 @@
         "title": "Desteklenen Diller",
         "desc": "S-RCS tamamen çok dillidir ve yönetimi tercih ettiğiniz dilde yapmanıza olanak tanır.",
         "languages": {
-            "az": "Azerice",
+            "az": "Azerbaycanca",
             "en": "İngilizce",
             "de": "Almanca",
             "ru": "Rusça",

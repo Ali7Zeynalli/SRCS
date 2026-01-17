@@ -18,9 +18,30 @@
         "github": "GitHub Stern geben"
     },
     "stats": {
-        "efficiency": "Effizienzsteigerung",
-        "setup": "Einrichtungszeit",
-        "platform": "Plattform"
+        "deployment_time": "< 2 Min",
+        "deployment_label": "Bereitstellungszeit",
+        "clicks_value": "3 Klicks",
+        "clicks_label": "Jede Operation",
+        "security_value": "100%",
+        "security_label": "On-Premise Sicherheit"
+    },
+    "mission": {
+        "title": "Warum S-RCS?",
+        "desc": "Herkömmliches AD-Management ist langsam, komplex und fehleranfällig. S-RCS vereinfacht die Verwaltung in einer modernen Weboberfläche, ohne die Sicherheit zu beeinträchtigen.",
+        "features": {
+            "time": {
+                "title": "Zeit sparen",
+                "desc": "Optimierte Arbeitsabläufe ersetzen endlose Navigation. Erledigen Sie komplexe Aufgaben in Sekunden."
+            },
+            "security": {
+                "title": "Sicher durch Design",
+                "desc": "Verwendet LDAPS (SSL) auf Port 636. Keine Passwörter im Klartext gespeichert. Vollständige Audit-Protokollierung."
+            },
+            "access": {
+                "title": "Zugriff von überall",
+                "desc": "Webbasiertes Portal. Verwalten Sie Ihren Server von jedem Gerät aus. Unterstützt <a href='https://github.com/Ali7Zeynalli/NovusGate' target='_blank' style='color: var(--primary);'>NovusGate VPN</a>."
+            }
+        }
     },
     "footer": {
         "tagline": "Server Reporting and Controlling System.\nDie Zukunft des AD-Managements.",

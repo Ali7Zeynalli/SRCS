@@ -18,9 +18,30 @@
         "github": "GitHub-da Ulduz verin"
     },
     "stats": {
-        "efficiency": "Səmərəlilik Artımı",
-        "setup": "Quraşdırma Vaxtı",
-        "platform": "Platforma"
+        "deployment_time": "< 2 dəq",
+        "deployment_label": "Quraşdırma Vaxtı",
+        "clicks_value": "3 Klik",
+        "clicks_label": "Hər hansı Əməliyyat",
+        "security_value": "100%",
+        "security_label": "On-Premise Təhlükəsizlik"
+    },
+    "mission": {
+        "title": "Niyə S-RCS?",
+        "desc": "Ənənəvi AD idarəetməsi yavaş, mürəkkəb və xətaya meyllidir. S-RCS təhlükəsizlikdən ödün vermədən idarəetməni müasir veb interfeysinə sadələşdirir.",
+        "features": {
+            "time": {
+                "title": "Vaxta Qənaət",
+                "desc": "Sadələşdirilmiş iş axınları sonsuz naviqasiyanı əvəz edir. Mürəkkəb tapşırıqları saniyələr ərzində yerinə yetirin."
+            },
+            "security": {
+                "title": "Dizaynla Təhlükəsiz",
+                "desc": "Port 636-da LDAPS (SSL) istifadə edir. Şifrələr açıq mətndə saxlanılmır. Tam audit loqlanması."
+            },
+            "access": {
+                "title": "Hər Yerdən Giriş",
+                "desc": "Veb əsaslı portal. Serverinizi istənilən cihazdan idarə edin. <a href='https://github.com/Ali7Zeynalli/NovusGate' target='_blank' style='color: var(--primary);'>NovusGate VPN</a> dəstəkləyir."
+            }
+        }
     },
     "footer": {
         "tagline": "Server Reportlama və İdarəetmə Sistemi.\nAD idarəetməsinin gələcəyi.",
