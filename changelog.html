@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Changelog | S-RCS</title>
+    <meta name="description" content="S-RCS release history — latest features, bug fixes, and improvements. Auto-synced with GitHub CHANGELOG.md.">
+    <meta name="keywords" content="S-RCS changelog, release notes, version history, updates">
+    <meta name="author" content="Ali Zeynalli">
+    <link rel="canonical" href="https://ali7zeynalli.github.io/SRCS/changelog.html">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/temp/assets/images/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ali7zeynalli.github.io/SRCS/changelog.html">
+    <meta property="og:title" content="S-RCS Changelog">
+    <meta property="og:description" content="Latest S-RCS features, bug fixes, and improvements.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="S-RCS Changelog">
+    <meta name="twitter:description" content="Release notes for every S-RCS version.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/cover.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Marked.js for Markdown parsing -->
@@ -162,7 +176,7 @@
     <script>
         // Fetch raw markdown from GitHub
         // Appending timestamp to bypass GitHub raw caching (optional but good for updates)
-        const changelogUrl = 'https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/CHANGELOG.md?v=' + new Date().getTime();
+        const changelogUrl = 'https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/CHANGELOG.md?v=' + new Date().getTime();
         const container = document.getElementById('changelog-content');
 
         fetch(changelogUrl)
@@ -185,7 +199,7 @@
                         <i class="fa-solid fa-triangle-exclamation" style="font-size: 2rem; margin-bottom: 10px;"></i>
                         <p data-i18n="changelog.status.error">Could not load changelog from GitHub.</p>
                         <p style="font-size: 0.9rem; color: var(--text-secondary);">${error.message}</p>
-                        <a href="https://github.com/Ali7Zeynalli/SRC/blob/main/CHANGELOG.md" target="_blank" class="btn btn-outline" style="margin-top: 20px;" data-i18n="changelog.status.view_github">View on GitHub</a>
+                        <a href="https://github.com/Ali7Zeynalli/S-RCS/blob/main/CHANGELOG.md" target="_blank" class="btn btn-outline" style="margin-top: 20px;" data-i18n="changelog.status.view_github">View on GitHub</a>
                     </div>
                 `;
             });

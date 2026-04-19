@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentation | S-RCS</title>
+    <meta name="description" content="Complete S-RCS documentation — installation guide, Active Directory preparation, setup wizard, module references, and troubleshooting.">
+    <meta name="keywords" content="S-RCS documentation, installation guide, Active Directory setup, Docker, LDAPS, wizard, troubleshooting">
+    <meta name="author" content="Ali Zeynalli">
+    <link rel="canonical" href="https://ali7zeynalli.github.io/SRCS/docs.html">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/temp/assets/images/logo.png">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://ali7zeynalli.github.io/SRCS/docs.html">
+    <meta property="og:title" content="Documentation | S-RCS">
+    <meta property="og:description" content="Complete S-RCS documentation — installation, AD prep, modules, troubleshooting.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="S-RCS Documentation">
+    <meta name="twitter:description" content="Installation, AD prep, and module references for S-RCS.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/cover.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -206,7 +220,7 @@ Restart-Computer</code></pre>
                     <li>✅ <span data-i18n="docs.ad_prep.step1.role1">Certification Authority</span></li>
                     <li>✅ <span data-i18n="docs.ad_prep.step1.role2">Certification Authority Web Enrollment</span></li>
                 </ul>
-                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/role.png" alt="Server Roles" style="width: 100%; max-width: 600px; border-radius: 8px; margin-top: 10px; border: var(--border);">
+                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/role.png" alt="Server Roles" style="width: 100%; max-width: 600px; border-radius: 8px; margin-top: 10px; border: var(--border);">
 
                 <h3 style="margin-top: 30px;" data-i18n="docs.ad_prep.step2.title">Step 2: CA Configuration</h3>
                 <p data-i18n="docs.ad_prep.step2.desc">After installation, click the yellow notification flag in Server Manager to configure the service. Use these settings:</p>
@@ -217,7 +231,7 @@ Restart-Computer</code></pre>
                     <li data-i18n="docs.ad_prep.step2.items.4"><strong>Cryptography:</strong> Default (SHA256)</li>
                     <li data-i18n="docs.ad_prep.step2.items.5"><strong>Validity:</strong> 5 Years</li>
                 </ol>
-                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/cer.png" alt="CA Config" style="width: 100%; max-width: 600px; border-radius: 8px; border: var(--border);">
+                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/cer.png" alt="CA Config" style="width: 100%; max-width: 600px; border-radius: 8px; border: var(--border);">
 
                 <h3 style="margin-top: 30px;" data-i18n="docs.ad_prep.step3.title">Step 3: Firewall Configuration</h3>
                 <p data-i18n="docs.ad_prep.step3.desc">You must allow inbound traffic on Port 636. Use one of the following methods:</p>
@@ -261,7 +275,7 @@ Restart-Computer</code></pre>
                                 <li data-i18n="docs.wizard.step1.items.2">✅ LDAP Extension</li>
                                 <li data-i18n="docs.wizard.step1.items.3">✅ OpenSSL</li>
                             </ul>
-                            <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/1.png" alt="Step 1" style="width: 100%; border-radius: 8px; border: var(--border);">
+                            <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/1.png" alt="Step 1" style="width: 100%; border-radius: 8px; border: var(--border);">
                         </div>
                     </div>
 
@@ -284,19 +298,19 @@ Restart-Computer</code></pre>
                                 </tr>
                             </table>
                         </div>
-                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/2.png" alt="Step 2" style="width: 100%; max-width: 600px; border-radius: 8px; border: var(--border);">
+                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/2.png" alt="Step 2" style="width: 100%; max-width: 600px; border-radius: 8px; border: var(--border);">
                     </div>
 
                     <div class="step">
                         <h3 data-i18n="docs.wizard.step3.title">Step 3: Database</h3>
                         <p data-i18n="docs.wizard.step3.desc">Read-only view of database settings loaded from `.env`.</p>
-                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/3.png" alt="Step 3" style="width: 100%; max-width: 600px; border-radius: 8px; border: var(--border);">
+                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/3.png" alt="Step 3" style="width: 100%; max-width: 600px; border-radius: 8px; border: var(--border);">
                     </div>
 
                     <div class="step">
                         <h3 data-i18n="docs.wizard.step4.title">Step 4 & 5: Install</h3>
                         <p data-i18n="docs.wizard.step4.desc">Review settings and click Install. You will receive a <strong>License Key</strong>.</p>
-                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/5.png" alt="Step 5" style="width: 100%; max-width: 600px; border-radius: 8px; border: var(--border);">
+                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/5.png" alt="Step 5" style="width: 100%; max-width: 600px; border-radius: 8px; border: var(--border);">
                     </div>
 
                     <div class="step">
@@ -309,7 +323,7 @@ Restart-Computer</code></pre>
                                 <li data-i18n="docs.wizard.step6.reinstall.2">Delete the <code>.installed</code> file</li>
                             </ol>
                         </div>
-                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/6.png" alt="Step 6" style="width: 100%; max-width: 600px; border-radius: 8px; border: var(--border);">
+                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/6.png" alt="Step 6" style="width: 100%; max-width: 600px; border-radius: 8px; border: var(--border);">
                     </div>
                 </div>
                 <div class="nav-buttons-container"></div>
@@ -328,7 +342,7 @@ Restart-Computer</code></pre>
                     <li data-i18n="docs.post_install.access.steps.2">Go to <strong>System Settings</strong> &rarr; <strong>Active Directory</strong>.</li>
                     <li data-i18n="docs.post_install.access.steps.3">Add groups to <strong>Allowed Groups</strong>.</li>
                 </ol>
-                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/ad%20group.png" alt="Access Control" style="width: 100%; border-radius: 8px; margin-top: 10px; border: var(--border);">
+                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/ad%20group.png" alt="Access Control" style="width: 100%; border-radius: 8px; margin-top: 10px; border: var(--border);">
                 <div class="nav-buttons-container"></div>
             </section>
 
@@ -337,11 +351,11 @@ Restart-Computer</code></pre>
                 <p data-i18n="docs.user_manual.dashboard.desc">The interactive dashboard allows you to monitor your AD environment at a glance.</p>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
                     <div>
-                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/7.png" alt="Login" style="width: 100%; border-radius: 8px; border: var(--border);">
+                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/7.png" alt="Login" style="width: 100%; border-radius: 8px; border: var(--border);">
                         <p style="text-align: center; color: var(--text-secondary);" data-i18n="docs.user_manual.dashboard.img1">Login Screen</p>
                     </div>
                     <div>
-                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/8.png" alt="Dashboard" style="width: 100%; border-radius: 8px; border: var(--border);">
+                        <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/8.png" alt="Dashboard" style="width: 100%; border-radius: 8px; border: var(--border);">
                         <p style="text-align: center; color: var(--text-secondary);" data-i18n="docs.user_manual.dashboard.img2">Dashboard</p>
                     </div>
                 </div>
@@ -351,21 +365,21 @@ Restart-Computer</code></pre>
             <section id="users" class="doc-section">
                 <h2 data-i18n="docs.user_manual.users.title">User Management</h2>
                 <p data-i18n="docs.user_manual.users.desc">Manage users with ease: Reset passwords, unlock accounts, disable/enable, and delete users.</p>
-                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/9.png" alt="Users" style="width: 100%; border-radius: 8px; border: var(--border);">
+                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/9.png" alt="Users" style="width: 100%; border-radius: 8px; border: var(--border);">
                 <div class="nav-buttons-container"></div>
             </section>
 
             <section id="ous" class="doc-section">
                 <h2 data-i18n="docs.user_manual.ous.title">OU Management</h2>
                 <p data-i18n="docs.user_manual.ous.desc">Explore your Organization Units in Tree View or Table View.</p>
-                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/12.png" alt="OUs" style="width: 100%; border-radius: 8px; border: var(--border);">
+                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/12.png" alt="OUs" style="width: 100%; border-radius: 8px; border: var(--border);">
                 <div class="nav-buttons-container"></div>
             </section>
 
             <section id="groups" class="doc-section">
                 <h2 data-i18n="docs.user_manual.groups.title">Group Management</h2>
                 <p data-i18n="docs.user_manual.groups.desc">Create and manage Security and Distribution groups. Bulk add members feature available.</p>
-                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/16.png" alt="Groups" style="width: 100%; border-radius: 8px; border: var(--border);">
+                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/16.png" alt="Groups" style="width: 100%; border-radius: 8px; border: var(--border);">
                 <div class="nav-buttons-container"></div>
             </section>
 
@@ -373,8 +387,8 @@ Restart-Computer</code></pre>
                 <h2 data-i18n="docs.user_manual.computers.title">Computers & GPOs</h2>
                 <p data-i18n="docs.user_manual.computers.desc">View computer objects and GPO details.</p>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                    <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/19.png" alt="Computers" style="width: 100%; border-radius: 8px; border: var(--border);">
-                    <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/21.png" alt="GPOs" style="width: 100%; border-radius: 8px; border: var(--border);">
+                    <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/19.png" alt="Computers" style="width: 100%; border-radius: 8px; border: var(--border);">
+                    <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/21.png" alt="GPOs" style="width: 100%; border-radius: 8px; border: var(--border);">
                 </div>
                 <div class="nav-buttons-container"></div>
             </section>
@@ -382,21 +396,21 @@ Restart-Computer</code></pre>
             <section id="tasks" class="doc-section">
                 <h2 data-i18n="docs.user_manual.tasks.title">Task Management</h2>
                 <p data-i18n="docs.user_manual.tasks.desc">Internal Helpdesk system for tracking IT requests.</p>
-                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/30.png" alt="Tasks" style="width: 100%; border-radius: 8px; border: var(--border);">
+                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/30.png" alt="Tasks" style="width: 100%; border-radius: 8px; border: var(--border);">
                 <div class="nav-buttons-container"></div>
             </section>
 
             <section id="reporting" class="doc-section">
                 <h2 data-i18n="docs.user_manual.reporting.title">Reporting</h2>
                 <p data-i18n="docs.user_manual.reporting.desc">Export data to CSV/Excel for auditing.</p>
-                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/23.png" alt="Reporting" style="width: 100%; border-radius: 8px; border: var(--border);">
+                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/23.png" alt="Reporting" style="width: 100%; border-radius: 8px; border: var(--border);">
                 <div class="nav-buttons-container"></div>
             </section>
 
             <section id="logs" class="doc-section">
                 <h2 data-i18n="docs.user_manual.logs.title">Audit Logs</h2>
                 <p data-i18n="docs.user_manual.logs.desc">Track all administrator actions within the portal.</p>
-                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/SRC/main/www/PH/24.png" alt="Logs" style="width: 100%; border-radius: 8px; border: var(--border);">
+                <img src="https://raw.githubusercontent.com/Ali7Zeynalli/S-RCS/main/www/PH/24.png" alt="Logs" style="width: 100%; border-radius: 8px; border: var(--border);">
                 <div class="nav-buttons-container"></div>
             </section>
 
