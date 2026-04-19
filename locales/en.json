@@ -9,7 +9,7 @@
         "download": "Download"
     },
     "hero": {
-        "badge": "v1.3.0 Available Now",
+        "badge": "v1.3.3 Available Now",
         "title_prefix": "Revolutionize Your",
         "title_highlight": "Active Directory",
         "title_suffix": "Management",
@@ -62,6 +62,50 @@
         "github": "GitHub",
         "linkedin": "LinkedIn",
         "copyright": "© 2025 Ali Zeynalli. All rights reserved."
+    },
+    "whatsnew": {
+        "badge": "WHAT'S NEW — v1.3.3",
+        "title": "Latest Release Highlights",
+        "subtitle": "April 2026 — Quality-of-life improvements across installer, updates, and security.",
+        "ldap": {
+            "title": "LDAP Connection Test",
+            "desc": "No more blind installs. The wizard validates AD credentials, auto-detects Base DN from rootDSE, and reports failures with clear hints — before you finish setup."
+        },
+        "i18n": {
+            "title": "Full i18n Update Modal",
+            "desc": "Update check modal now respects all 5 languages (EN/AZ/TR/RU/DE). 25 new translation keys bring full multilingual support to the upgrade flow."
+        },
+        "steps": {
+            "title": "Step-by-Step Upgrade",
+            "desc": "When a new version is detected, the modal shows 5 numbered steps, copy-to-clipboard buttons for each command, backup recommendations, and troubleshooting hints."
+        },
+        "secrets": {
+            "title": "Secret Safety",
+            "desc": "config.php (containing secret_key, passwords, license key) removed from git tracking. Container auto-generates it from a clean template on first start."
+        },
+        "update": {
+            "title": "Auto Update Check",
+            "desc": "Footer shows a green UPDATE badge when a new version is available on GitHub. 24h cache keeps it lightweight — no aggressive polling."
+        },
+        "scale": {
+            "title": "Enterprise Scale",
+            "desc": "LDAP pagination for Groups, GPOs, OUs, Computers — works reliably with 1000+ objects. 50× faster GPO listing (N+1 queries eliminated)."
+        },
+        "cta": "See Full Changelog"
+    },
+    "related": {
+        "badge": "ALSO BY ALI ZEYNALLI",
+        "title": "Explore the Toolkit",
+        "subtitle": "S-RCS is part of a growing family of self-hosted infrastructure tools. Pair them for a complete admin stack.",
+        "view_github": "View on GitHub",
+        "novusgate": {
+            "tagline": "Self-hosted WireGuard VPN",
+            "desc": "Modern web UI for WireGuard VPN. Manage peers, keys, and firewall rules without touching config files. Perfect for remote access to S-RCS from anywhere."
+        },
+        "dockgate": {
+            "tagline": "Docker management UI",
+            "desc": "Lightweight web interface to manage Docker containers, images, networks, and volumes. Ideal companion for managing the S-RCS Docker stack itself."
+        }
     },
     "gallery": {
         "badge": "INTERFACE",
@@ -295,6 +339,9 @@
         }
     },
     "docs": {
+        "menu": {
+            "toggle": "Documentation Menu"
+        },
         "sidebar": {
             "getting_started": "Getting Started",
             "intro": "Introduction",

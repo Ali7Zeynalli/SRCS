@@ -9,7 +9,7 @@
         "download": "Herunterladen"
     },
     "hero": {
-        "badge": "v1.3.0 Jetzt verfügbar",
+        "badge": "v1.3.3 Jetzt verfügbar",
         "title_prefix": "Revolutionieren Sie Ihr",
         "title_highlight": "Active Directory",
         "title_suffix": "Management",
@@ -62,6 +62,50 @@
         "github": "GitHub",
         "linkedin": "LinkedIn",
         "copyright": "© 2025 Ali Zeynalli. Alle Rechte vorbehalten."
+    },
+    "whatsnew": {
+        "badge": "NEUIGKEITEN — v1.3.3",
+        "title": "Highlights der neuesten Version",
+        "subtitle": "April 2026 — Qualitätsverbesserungen in Installer, Updates und Sicherheit.",
+        "ldap": {
+            "title": "LDAP-Verbindungstest",
+            "desc": "Keine Blindinstallationen mehr. Der Assistent validiert AD-Anmeldedaten, erkennt Base DN automatisch aus rootDSE und meldet Fehler mit klaren Hinweisen — bevor Sie das Setup abschließen."
+        },
+        "i18n": {
+            "title": "Update-Modal volle Sprachunterstützung",
+            "desc": "Update-Check-Modal unterstützt jetzt alle 5 Sprachen (EN/AZ/TR/RU/DE). 25 neue Übersetzungsschlüssel bringen volle mehrsprachige Unterstützung."
+        },
+        "steps": {
+            "title": "Schritt-für-Schritt-Upgrade",
+            "desc": "Bei Erkennung einer neuen Version zeigt das Modal 5 nummerierte Schritte, Kopier-Buttons für jeden Befehl, Backup-Empfehlungen und Fehlerbehebungshinweise."
+        },
+        "secrets": {
+            "title": "Secret-Sicherheit",
+            "desc": "config.php (mit secret_key, Passwörtern, Lizenzschlüssel) aus git-Tracking entfernt. Container generiert es beim ersten Start automatisch aus einer sauberen Vorlage."
+        },
+        "update": {
+            "title": "Automatische Update-Prüfung",
+            "desc": "Im Footer erscheint ein grünes UPDATE-Badge, wenn auf GitHub eine neue Version verfügbar ist. 24-Stunden-Cache hält es leicht — kein aggressives Polling."
+        },
+        "scale": {
+            "title": "Enterprise-Skalierung",
+            "desc": "LDAP-Pagination für Groups, GPOs, OUs, Computers — funktioniert zuverlässig mit 1000+ Objekten. 50× schnellere GPO-Liste (N+1-Queries eliminiert)."
+        },
+        "cta": "Vollständiges Changelog anzeigen"
+    },
+    "related": {
+        "badge": "VON ALI ZEYNALLI",
+        "title": "Entdecken Sie das Toolkit",
+        "subtitle": "S-RCS ist Teil einer wachsenden Familie selbstgehosteter Infrastruktur-Tools. Kombinieren Sie sie für einen kompletten Admin-Stack.",
+        "view_github": "Auf GitHub ansehen",
+        "novusgate": {
+            "tagline": "Self-hosted WireGuard VPN",
+            "desc": "Moderne Web-Oberfläche für WireGuard VPN. Peers, Schlüssel und Firewall-Regeln verwalten, ohne Konfigurationsdateien zu bearbeiten. Perfekt für den Fernzugriff auf S-RCS von überall."
+        },
+        "dockgate": {
+            "tagline": "Docker-Verwaltungs-UI",
+            "desc": "Leichtgewichtige Web-Oberfläche zur Verwaltung von Docker-Containern, Images, Netzwerken und Volumes. Idealer Begleiter für die Verwaltung des S-RCS-Docker-Stacks."
+        }
     },
     "gallery": {
         "badge": "SCHNITTSTELLE",
@@ -295,6 +339,9 @@
         }
     },
     "docs": {
+        "menu": {
+            "toggle": "Dokumentationsmenü"
+        },
         "sidebar": {
             "getting_started": "Erste Schritte",
             "intro": "Einführung",

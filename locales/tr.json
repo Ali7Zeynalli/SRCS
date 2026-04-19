@@ -9,7 +9,7 @@
         "download": "İndir"
     },
     "hero": {
-        "badge": "v1.3.0 Şimdi Yayında",
+        "badge": "v1.3.3 Şimdi Yayında",
         "title_prefix": "",
         "title_highlight": "Active Directory",
         "title_suffix": "Yönetiminizde Devrim Yapın",
@@ -62,6 +62,50 @@
         "github": "GitHub",
         "linkedin": "LinkedIn",
         "copyright": "© 2025 Ali Zeynalli. Tüm hakları saklıdır."
+    },
+    "whatsnew": {
+        "badge": "YENİLİKLER — v1.3.3",
+        "title": "Son Sürümün Öne Çıkanları",
+        "subtitle": "Nisan 2026 — Kurulum, güncelleme ve güvenlik genelinde kalite iyileştirmeleri.",
+        "ldap": {
+            "title": "LDAP Bağlantı Testi",
+            "desc": "Artık kör kurulum yok. Sihirbaz AD kimlik bilgilerini doğrular, rootDSE'den Base DN'i otomatik algılar ve hataları açık ipuçlarıyla bildirir — kurulumu bitirmeden."
+        },
+        "i18n": {
+            "title": "Güncelleme Modalı Tam Dil Desteği",
+            "desc": "Güncelleme kontrol modalı artık 5 dile (EN/AZ/TR/RU/DE) tam uyumlu. 25 yeni çeviri anahtarı yükseltme akışına tam çok dilli destek getirir."
+        },
+        "steps": {
+            "title": "Adım Adım Yükseltme",
+            "desc": "Yeni sürüm tespit edildiğinde modal 5 numaralı adım, her komut için kopyala butonu, yedekleme önerileri ve sorun giderme ipuçları gösterir."
+        },
+        "secrets": {
+            "title": "Secret Güvenliği",
+            "desc": "config.php (secret_key, şifreler, lisans anahtarı içeren) git takibinden kaldırıldı. Konteyner ilk başlatmada temiz şablondan otomatik oluşturur."
+        },
+        "update": {
+            "title": "Otomatik Güncelleme Kontrolü",
+            "desc": "GitHub'da yeni sürüm olduğunda footer yeşil UPDATE rozeti gösterir. 24 saatlik önbellek hafif tutar — agresif yoklama yok."
+        },
+        "scale": {
+            "title": "Kurumsal Ölçek",
+            "desc": "LDAP sayfalama Groups, GPOs, OUs, Computers için — 1000+ nesne ile güvenilir çalışır. 50× daha hızlı GPO listesi (N+1 sorgular ortadan kaldırıldı)."
+        },
+        "cta": "Tam Değişiklik Günlüğüne Bak"
+    },
+    "related": {
+        "badge": "ALİ ZEYNALLI'DAN",
+        "title": "Araç Kutusunu Keşfet",
+        "subtitle": "S-RCS büyüyen self-hosted altyapı araçları ailesinin bir parçası. Tam yönetici yığını için bunları birlikte kullanın.",
+        "view_github": "GitHub'da Görüntüle",
+        "novusgate": {
+            "tagline": "Kendi Sunucunuzda WireGuard VPN",
+            "desc": "WireGuard VPN için modern web arayüzü. Config dosyalarına dokunmadan peer'ları, anahtarları ve güvenlik duvarı kurallarını yönetin. S-RCS'e her yerden uzaktan erişim için mükemmel."
+        },
+        "dockgate": {
+            "tagline": "Docker yönetim arayüzü",
+            "desc": "Docker konteynerleri, imageleri, ağları ve volume'ları yönetmek için hafif web arayüzü. S-RCS Docker yığınının kendisini yönetmek için ideal."
+        }
     },
     "gallery": {
         "badge": "ARAYÜZ",
@@ -295,6 +339,9 @@
         }
     },
     "docs": {
+        "menu": {
+            "toggle": "Belgeler Menüsü"
+        },
         "sidebar": {
             "getting_started": "Başlangıç",
             "intro": "Giriş",

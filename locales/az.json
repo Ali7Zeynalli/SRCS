@@ -9,7 +9,7 @@
         "download": "Yüklə"
     },
     "hero": {
-        "badge": "v1.3.0 İndi Mövcuddur",
+        "badge": "v1.3.3 İndi Mövcuddur",
         "title_prefix": "",
         "title_highlight": "Active Directory",
         "title_suffix": "İdarəetmənizdə İnqilab Edin",
@@ -62,6 +62,50 @@
         "github": "GitHub",
         "linkedin": "LinkedIn",
         "copyright": "© 2025 Əli Zeynallı. Bütün hüquqlar qorunur."
+    },
+    "whatsnew": {
+        "badge": "YENİLİKLƏR — v1.3.3",
+        "title": "Son Buraxılışın Əsas Məqamları",
+        "subtitle": "Aprel 2026 — Quraşdırıcı, yeniləmə və təhlükəsizlik üzrə keyfiyyət yaxşılaşmaları.",
+        "ldap": {
+            "title": "LDAP Bağlantı Testi",
+            "desc": "Artıq kor-koranə quraşdırma yoxdur. Wizard AD məlumatlarını yoxlayır, rootDSE-dən Base DN-i avtomatik aşkarlayır və uğursuzluqlarda aydın ipuclar göstərir — quraşdırmanı bitirmədən."
+        },
+        "i18n": {
+            "title": "Update Modal Tam Dil Dəstəyi",
+            "desc": "Update modal artıq 5 dilə (EN/AZ/TR/RU/DE) tamamilə tabedir. 25 yeni tərcümə açarı yeniləmə prosesinə tam çoxdilli dəstək gətirir."
+        },
+        "steps": {
+            "title": "Addım-Addım Yeniləmə",
+            "desc": "Yeni versiya aşkarlandıqda modal 5 nömrəli addım, hər komanda üçün kopya düyməsi, backup tövsiyəsi və troubleshooting ipuclarını göstərir."
+        },
+        "secrets": {
+            "title": "Secret Təhlükəsizliyi",
+            "desc": "config.php (secret_key, şifrələr, license key daxil) git tracking-dən silindi. Konteyner ilk başlanğıcda onu təmiz template-dən avtomatik yaradır."
+        },
+        "update": {
+            "title": "Avtomatik Yenilik Yoxlaması",
+            "desc": "GitHub-da yeni versiya olduqda footer-də yaşıl UPDATE badge görünür. 24 saatlıq cache yüngül saxlayır — aqressiv polling yoxdur."
+        },
+        "scale": {
+            "title": "Enterprise Miqyas",
+            "desc": "LDAP səhifələmə Groups, GPOs, OUs, Computers üçün — 1000+ obyektlə stabil işləyir. 50× sürətli GPO siyahısı (N+1 sorğular aradan qaldırıldı)."
+        },
+        "cta": "Tam Dəyişiklik Jurnalına Bax"
+    },
+    "related": {
+        "badge": "ƏLİ ZEYNALLIDAN",
+        "title": "Alətlər Kolleksiyası",
+        "subtitle": "S-RCS self-hosted infrastruktur alətləri ailəsinin bir hissəsidir. Tam admin stack üçün onları birləşdir.",
+        "view_github": "GitHub-da Bax",
+        "novusgate": {
+            "tagline": "Self-hosted WireGuard VPN",
+            "desc": "WireGuard VPN üçün müasir web interfeysi. Peer-lər, açarlar və firewall qaydalarını config fayllarına toxunmadan idarə et. S-RCS-ə istənilən yerdən uzaq giriş üçün idealdır."
+        },
+        "dockgate": {
+            "tagline": "Docker idarəetmə interfeysi",
+            "desc": "Docker konteynerlər, image-lər, şəbəkələr və volume-lər üçün yüngül web interfeysi. S-RCS Docker stack-in özünü idarə etmək üçün ideal əlavə."
+        }
     },
     "gallery": {
         "badge": "İNTERFEYS",
@@ -295,6 +339,9 @@
         }
     },
     "docs": {
+        "menu": {
+            "toggle": "Sənədləşmə Menyusu"
+        },
         "sidebar": {
             "getting_started": "Başlanğıc",
             "intro": "Giriş",
