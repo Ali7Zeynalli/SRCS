@@ -98,13 +98,14 @@
         "title": "Entdecken Sie das Toolkit",
         "subtitle": "S-RCS ist Teil einer wachsenden Familie selbstgehosteter Infrastruktur-Tools. Kombinieren Sie sie für einen kompletten Admin-Stack.",
         "view_github": "Auf GitHub ansehen",
+        "tag_selfhosted": "Selbst-gehostet",
         "novusgate": {
-            "tagline": "Self-hosted WireGuard VPN",
-            "desc": "Moderne Web-Oberfläche für WireGuard VPN. Peers, Schlüssel und Firewall-Regeln verwalten, ohne Konfigurationsdateien zu bearbeiten. Perfekt für den Fernzugriff auf S-RCS von überall."
+            "tagline": "Selbstgehostetes WireGuard VPN",
+            "desc": "Moderne Web-Oberfläche für WireGuard VPN. Verwalten Sie Peers, Schlüssel und Firewall-Regeln, ohne Konfigurationsdateien zu bearbeiten. Perfekt für den Fernzugriff auf S-RCS von überall."
         },
         "dockgate": {
-            "tagline": "Docker-Verwaltungs-UI",
-            "desc": "Leichtgewichtige Web-Oberfläche zur Verwaltung von Docker-Containern, Images, Netzwerken und Volumes. Idealer Begleiter für die Verwaltung des S-RCS-Docker-Stacks."
+            "tagline": "Docker-Verwaltungsoberfläche",
+            "desc": "Leichtgewichtige Web-Oberfläche zur Verwaltung von Docker-Containern, Images, Netzwerken und Volumes. Der ideale Begleiter für die Verwaltung des S-RCS-Docker-Stacks."
         }
     },
     "gallery": {

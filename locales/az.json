@@ -98,13 +98,14 @@
         "title": "Alətlər Kolleksiyası",
         "subtitle": "S-RCS self-hosted infrastruktur alətləri ailəsinin bir hissəsidir. Tam admin stack üçün onları birləşdir.",
         "view_github": "GitHub-da Bax",
+        "tag_selfhosted": "Öz Serverində",
         "novusgate": {
-            "tagline": "Self-hosted WireGuard VPN",
-            "desc": "WireGuard VPN üçün müasir web interfeysi. Peer-lər, açarlar və firewall qaydalarını config fayllarına toxunmadan idarə et. S-RCS-ə istənilən yerdən uzaq giriş üçün idealdır."
+            "tagline": "Öz serverində WireGuard VPN",
+            "desc": "WireGuard VPN üçün müasir veb interfeysi. Peer-ləri, açarları və firewall qaydalarını konfiq fayllarına toxunmadan idarə edin. S-RCS-ə istənilən yerdən uzaqdan giriş üçün idealdır."
         },
         "dockgate": {
             "tagline": "Docker idarəetmə interfeysi",
-            "desc": "Docker konteynerlər, image-lər, şəbəkələr və volume-lər üçün yüngül web interfeysi. S-RCS Docker stack-in özünü idarə etmək üçün ideal əlavə."
+            "desc": "Docker konteynerləri, image-ləri, şəbəkələri və volume-ləri idarə etmək üçün yüngül veb interfeysi. S-RCS-in Docker stack-ini idarə etmək üçün ideal tamamlayıcıdır."
         }
     },
     "gallery": {

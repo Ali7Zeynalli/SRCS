@@ -98,6 +98,7 @@
         "title": "Araç Kutusunu Keşfet",
         "subtitle": "S-RCS büyüyen self-hosted altyapı araçları ailesinin bir parçası. Tam yönetici yığını için bunları birlikte kullanın.",
         "view_github": "GitHub'da Görüntüle",
+        "tag_selfhosted": "Kendi Sunucunuzda",
         "novusgate": {
             "tagline": "Kendi Sunucunuzda WireGuard VPN",
             "desc": "WireGuard VPN için modern web arayüzü. Config dosyalarına dokunmadan peer'ları, anahtarları ve güvenlik duvarı kurallarını yönetin. S-RCS'e her yerden uzaktan erişim için mükemmel."

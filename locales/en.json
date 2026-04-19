@@ -98,6 +98,7 @@
         "title": "Explore the Toolkit",
         "subtitle": "S-RCS is part of a growing family of self-hosted infrastructure tools. Pair them for a complete admin stack.",
         "view_github": "View on GitHub",
+        "tag_selfhosted": "Self-hosted",
         "novusgate": {
             "tagline": "Self-hosted WireGuard VPN",
             "desc": "Modern web UI for WireGuard VPN. Manage peers, keys, and firewall rules without touching config files. Perfect for remote access to S-RCS from anywhere."
